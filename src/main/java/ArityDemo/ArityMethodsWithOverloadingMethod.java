@@ -1,4 +1,4 @@
-package com.learn.learnproject;
+package ArityDemo;
 
 /**
  *
