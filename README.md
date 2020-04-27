@@ -11,11 +11,12 @@ This project based on the "Java The Complete Reference, 8th Edition" and on the 
                   │    ├── AbstractAreas
                   │    └── AbstractDemo
                   ├── AnnotationDemo
-                  │    ├── Marker
-                  │    ├── Meta
-                  │    ├── Meta1
-                  │    ├── Single
-                  │    └── TypeAnnoDemo
+                  │    ├── Marker                                    #Annotation Marker  
+                  │    ├── Meta                                      #@Retention annotations with Reflection
+                  │    ├── Meta1                                     #@Retention annotations with Reflection
+                  │    ├── RepeatAnno                                #@Repeatable annotations
+                  │    ├── Single                                    #@Single annotations
+                  │    └── TypeAnnoDemo                              #@Type annotations (@Target(ElementType.*))
                   ├── ArityDemo
                   │    ├── ArityMethods
                   │    └── ArityMethodsWithOverloadingMethod
