@@ -4,8 +4,8 @@ import java.lang.annotation.*;
 import java.lang.reflect.Method;
 
 /**
- * There is three types of annotations Retention SOURCE/CLASS/RUNTIME. They
- * change behavior of annotations when system is run. Class Annotation is
+ * There are three types of annotations Retention SOURCE/CLASS/RUNTIME. They
+ * change life-cycle of annotations when system is run. Class Annotation is
  * super-interface for all annotations of interface
  *
  * @author Bohdan Skrypnyk
