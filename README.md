@@ -1,6 +1,6 @@
 # Learn Project
 
-This project based on the "Java The Complete Reference, 8th Edition" and on the HackeRrank.com exercise
+This project based on the "Java The Complete Reference, 8th Edition" and on the HackeRrank.com exercise / topics.
 
 # Structure of the Project
         
