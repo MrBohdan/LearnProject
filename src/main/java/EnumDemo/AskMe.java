@@ -3,6 +3,9 @@ package EnumDemo;
 import java.util.Random;
 
 /**
+ * Enum - a special type of class, with constant/final variables. There is no
+ * way to create a new instance of enum class by using "new". Enum class cannot
+ * be a superclass and cannot inherit from other class
  *
  * @author Bohdan Skrypnyk
  */

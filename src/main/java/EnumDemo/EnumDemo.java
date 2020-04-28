@@ -1,13 +1,13 @@
 package EnumDemo;
 
 /**
- * @enum - special type of class, with constant/final variables. There is no way
- * to create new instance of @enum class by using "new"
- * @enum class cannot be a super class and cannot inherit from other class
- * 
+ * Enum - a special type of class, with constant/final variables. There is no
+ * way to create a new instance of enum class by using "new". Enum class cannot
+ * be a superclass and cannot inherit from other class
+ *
  * @author Bohdan Skrypnyk
  */
-//types of Apples
+// types of apples
 enum Apple {
     Gala, GrannySmith, Honeycrisp, GoldenDelicious, Braeburn
 }
@@ -22,7 +22,7 @@ public class EnumDemo {
 
         ap = Apple.Braeburn;
 
-        //Compare two types of enum
+        // compare two types of enum
         if (ap == Apple.Braeburn) {
             System.out.println("Variable \"ap\" contain Braeburn");
         }
@@ -47,14 +47,14 @@ public class EnumDemo {
 
         System.out.println();
 
-        // method values(); returns massive of enum constants
+        // method 'values()' returns massive of enum constants
         for (Apple a : Apple.values()) {
             System.out.println(a);
         }
 
         System.out.println();
 
-        // method valueOf(String str); return enum constants of given type
+        // method 'valueOf(String str)' return enum constants of given type
         ap = Apple.valueOf("GoldenDelicious");
 
         System.out.println(ap);

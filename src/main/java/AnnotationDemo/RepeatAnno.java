@@ -7,7 +7,7 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.reflect.Method;
 
 /**
- * @Repeatable allow repeat annotation in one place. The method must contain
+ * @Repeatable allows repeat annotation in one place. The method must contain
  * massive with field 'value'.
  *
  * Annotations have few limitations. (1) one annotation cannot inherit another
@@ -18,7 +18,7 @@ import java.lang.reflect.Method;
  * @author Bohdan Skrypnyk
  */
 @Retention(RetentionPolicy.RUNTIME)
-@Repeatable(MyRepeatableAnno.class) // make annotaton @MyAnno2 repeatable
+@Repeatable(MyRepeatableAnno.class) // make annotation @MyAnno2 repeatable
 @interface MyAnno2 {
 
     String str();
@@ -26,7 +26,7 @@ import java.lang.reflect.Method;
     int num() default 15;
 }
 
-//All repeating annotations are stored in 'container anotations', such as below
+// all repeating annotations are stored in 'container annotations', such as below
 @Retention(RetentionPolicy.RUNTIME)
 @interface MyRepeatableAnno {
 
@@ -35,7 +35,7 @@ import java.lang.reflect.Method;
 
 public class RepeatAnno {
 
-    //repeat annotations '@MyAnno2' in 'myMeth' method 
+    // repeat annotations '@MyAnno2' in 'myMeth' method 
     @MyAnno2(str = "First annotation", num = 25)
     @MyAnno2(str = "Second annotation")
     @MyAnno2(str = "Third annotation", num = -1)
@@ -43,17 +43,17 @@ public class RepeatAnno {
         RepeatAnno obj = new RepeatAnno();
         try {
 
-            //get object Class, than get method
+            // get object Class, then get method
             Method meth = obj.getClass().getMethod("myMeth", int.class);
 
-            //get container anotations from MyRepeatableAnno class 
+            // get annotations from the 'myMeth' method
             Annotation annn = meth.getAnnotation(MyRepeatableAnno.class);
 
-            //display annotations
-            //all repeated annotations returned as single line, but they devidet by ','
+            // display annotations
+            // all repeated annotations returned as a single line, but they divided by coma
             System.out.println(annn);
 
-            //another way to get all repeated annotations from '@MyAnno2'
+            // another way to get all repeated annotations from '@MyAnno2'
             Annotation annn1[] = meth.getAnnotationsByType(MyAnno2.class);
 
             for (Annotation ann : annn1) {

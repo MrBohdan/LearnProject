@@ -1,9 +1,9 @@
 package EnumDemo;
 
 /**
- * @enum - special type of class, with constant/final variables. There is no way
- * to create new instance of @enum class by using "new"
- * @enum class cannot be a super class and cannot inherit from other class
+ * Enum - a special type of class, with constant/final variables. There is no
+ * way to create a new instance of @enum class by using "new". Enum class cannot
+ * be a superclass and cannot inherit from other class
  *
  * @author Bohdan Skrypnyk
  */
@@ -23,7 +23,7 @@ public class EnumDemo2 {
 
         System.out.println("All aplles and their order num");
 
-        //ordinal(); method return order number of const
+        // method 'ordinal()' return order number of const
         for (Apple2 a : Apple2.values()) {
             System.out.println(a + " : " + a.ordinal());
         }
@@ -34,10 +34,10 @@ public class EnumDemo2 {
         System.out.println();
 
         /**
-         * method "compareTo(e);" compare order number and return negative
-         * number if caller var have lower position than 'e'. Otherwise return
-         * positive number
-         *
+         * method "compareTo(e);" compare order number and return a negative
+         * number if caller var has a lower position than 'e'. Otherwise, return
+         * positive number 
+         * 
          * if both constant is same, method return 0
          */
         if (ap.compareTo(ap1) < 0) {

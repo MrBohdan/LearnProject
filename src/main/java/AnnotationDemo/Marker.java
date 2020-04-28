@@ -5,8 +5,8 @@ import java.lang.reflect.Method;
 
 /**
  * There are three types of annotations Retention SOURCE/CLASS/RUNTIME. They
- * change life-cycle of annotations when system is run. Class Annotation is
- * super-interface for all annotations of interface
+ * change the life-cycle of annotations when the system is run. Class Annotation
+ * is super-interface for all annotations of interface
  *
  * @author Bohdan Skrypnyk
  */
@@ -23,7 +23,7 @@ public class Marker {
         try {
             Method meth = m.getClass().getMethod("myMeth");
 
-            // Check if annotation is present or not 
+            // check if an annotation is present or not 
             if (meth.isAnnotationPresent(MyMarker.class)) {
                 System.out.println("MyMarker present");
             }

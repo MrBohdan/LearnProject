@@ -7,8 +7,8 @@ import java.lang.reflect.Method;
 
 /**
  * There are three types of annotations Retention SOURCE/CLASS/RUNTIME. They
- * change life-cycle of annotations when system is run. Class Annotation is
- * super-interface for all annotations of interface
+ * change the life-cycle of annotations when the system is run. Class Annotation
+ * is super-interface for all annotations of interface
  *
  * @author Bohdan Skrypnyk
  */
@@ -39,17 +39,17 @@ public class Meta {
 
         Meta meta = new Meta();
         try {
-            // Get object Class
+            // the first step of the 'Reflection' - get object Class
             Class<?> c = meta.getClass();
 
-            // Get object Method
-            // If method has parameters, we must add parameterTypes.class
+            // the second step of the 'Reflection' - get object Method
+            // if method has parameters, we must add parameterTypes.class
             Method meth = c.getMethod("myMeth", String.class, int.class);
 
-            //Get Annotations for this class
+            // get annotations from the method
             MyAnno myanno = meth.getAnnotation(MyAnno.class);
 
-            //Display values of annotations 
+            // display values of annotations 
             System.out.println(myanno.str() + " " + myanno.num());
 
             // another example of getting annotations
@@ -57,7 +57,7 @@ public class Meta {
 
             System.out.println(str + " " + i);
 
-            // Get all annotations
+            // get all annotations from the 'Meta' class
             Annotation anno[] = meta.getClass().getAnnotations();
 
             for (Annotation a : anno) {
@@ -65,7 +65,8 @@ public class Meta {
             }
 
             System.out.println();
-
+            
+            // get all annotations from the 'myMeth' method
             anno = meth.getAnnotations();
             for (Annotation a : anno) {
                 System.out.println(a);
