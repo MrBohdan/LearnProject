@@ -20,11 +20,15 @@ This project based on the "Java The Complete Reference, 8th Edition" and on the 
               ├── ArityDemo
               │    ├── ArityMethods                              #
               │    └── ArityMethodsWithOverloadingMethod         #
+              ├── AssertDemo
+              │    └── AssertDemo                                #Keyword 'assert'
               ├── EnumDemo
               │    ├── AskMe                                     #
               │    ├── EnumDemo                                  #
               │    ├── EnumDemo1                                 #
               │    └── EnumDemo2                                 #
+              ├── GenericDemo
+              │    └── GenDemo                                   #Generic types, '<T>'
               ├── InheritanceDemo
               │    ├── InheritanceBoxExample                     #
               │    ├── SimpleInheritance                         #
@@ -43,6 +47,8 @@ This project based on the "Java The Complete Reference, 8th Edition" and on the 
               │    ├── BRReadLines1                              #BufferedReader with readLine() method
               │    ├── PrintWriterDemo                           #PrintWriter with println() method
               │    └── ShowFile                                  #FileInputStream
+              ├── ThisDemo
+              │    └── MyClass                                   #Overloaded constructors with keyword 'this'
               ├── ThreadDemo 
               │    ├── CurrentTreadDemo                          #
               │    ├── DeadLock                                  #

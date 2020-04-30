@@ -20,7 +20,7 @@ public class ShowFile {
         // method 'read()' read return -1 when reached end of the file
         // Block 'try' will automatically close file input/output
         try (FileInputStream fis = new FileInputStream("README.md");
-                FileOutputStream fos = new FileOutputStream("tempREADME.md")) {
+                FileOutputStream fos = new FileOutputStream("tempREADME.md")) {// create file/open for write
 
             do {
                 i = fis.read();
