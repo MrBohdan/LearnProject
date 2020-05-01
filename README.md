@@ -28,7 +28,9 @@ This project based on the "Java The Complete Reference, 8th Edition" and on the 
               │    ├── EnumDemo1                                 #
               │    └── EnumDemo2                                 #
               ├── GenericDemo
-              │    └── GenDemo                                   #Generic types, '<T>'
+              │    ├── BoundsDemo                                #Restrict a generic type
+              │    ├── GenDemo                                   #Generic type, '<T>'
+              │    └── SimpGen                                   #Two generic types, '<T, E>'
               ├── InheritanceDemo
               │    ├── InheritanceBoxExample                     #
               │    ├── SimpleInheritance                         #
@@ -70,7 +72,6 @@ This project based on the "Java The Complete Reference, 8th Edition" and on the 
                    ├── Java_Output_Formatting
                    ├── Logical_Op_Table
                    ├── Sock_Merchant
-                   ├── Solution1
                    ├── Static_Initializer_Block
                    ├── Strings
                    ├── TelnetClient
@@ -79,3 +80,11 @@ This project based on the "Java The Complete Reference, 8th Edition" and on the 
 
 
 # Brief notes
+
+<b>Enum</b>
+
+>Enum - a special type of class, with constant/final variables. There is no way to create a new instance of enum class by using "new". Enum class cannot be a superclass and cannot inherit from other class
+
+<b>Generics</b>
+
+>Generic allows using any type of data for the object.  A generic type can be restricted, by type of class or/and one to many interface types (by using logical operator AND).

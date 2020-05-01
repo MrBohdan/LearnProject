@@ -33,7 +33,7 @@ public class GenDemo {
         // create a link to 'Gen' class with type Integer 
         Gen<Integer> obj;
 
-        // create Integer object and assign it to 'obj'
+        // create object with type Integer and assign it to 'obj'
         obj = new Gen<Integer>(80);
 
         // вisplay type of Generic 
