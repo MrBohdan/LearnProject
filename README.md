@@ -28,8 +28,14 @@ This project based on the "Java The Complete Reference, 8th Edition" and on the 
               │    ├── EnumDemo1                                 #
               │    └── EnumDemo2                                 #
               ├── GenericDemo
-              │    ├── BoundsDemo                                #Restrict a generic type
+              │    ├── BoundedWildCard                           #Generics with upper boundaries
+              │    ├── BoundsDemo                                #Restrictions on generics type and usage of wildcard '<?>'
+              │    ├── GenConstrDemo                             #Generic constructors with upper boundaries
               │    ├── GenDemo                                   #Generic type, '<T>'
+              │    ├── GenSuperDemo                              #Generic superclass
+              │    ├── GenSuperDemo1                             #Generic subclass
+              │    ├── HierarchyDemo                             #Generic with operator 'instanceof'
+              │    ├── OverrideDemo                              #
               │    └── SimpGen                                   #Two generic types, '<T, E>'
               ├── InheritanceDemo
               │    ├── InheritanceBoxExample                     #
@@ -81,10 +87,19 @@ This project based on the "Java The Complete Reference, 8th Edition" and on the 
 
 # Brief notes
 
-<b>Enum</b>
+<h4>Enum</h4>
 
->Enum - a special type of class, with constant/final variables. There is no way to create a new instance of enum class by using "new". Enum class cannot be a superclass and cannot inherit from other class
+>Enum - a special type of class, with constant/final variables. There is no way to create a new instance of enum class by using 
+"new". Enum class cannot be a superclass and cannot inherit from other class
 
-<b>Generics</b>
+<h4>Generics</h4>
 
->Generic allows using any type of data for the object.  A generic type can be restricted, by type of class or/and one to many interface types (by using logical operator AND).
+>A generic type can be restricted, by type of class or/and one to many interface types (by using logical operator AND). Keyword
+'extends' to set upper boundaries. Keyword 'super' to set lover boundaries. The generic type of method must be initialized before initialization of the returning type of the method
+
+<h4>Annotation</h4>
+
+>There are three types of 'Retention' annotation SOURCE/CLASS/RUNTIME. They change the life-cycle of annotations when the system is run. Class Annotation is super-interface for all annotations of interface.  
+@Repeatable allows repeat annotation in one place. The method must contain massive with field 'value'. Annotations have few limitations. (1) one annotation cannot inherit another one; (2) all methods which are declared in annotation must not have parameters; (3) they should return anything, such as (String, int...), except Generic types.
+
+
