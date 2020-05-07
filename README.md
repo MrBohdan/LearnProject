@@ -1,6 +1,6 @@
 # Learn Project
 
-This project based on the "Java The Complete Reference, 8th Edition" and on the HackeRrank.com exercise / topics.
+This project based on the "Java The Complete Reference, 8th Edition" and on the hackerrank.com exercise / topics.
 
 # Structure of the Project
 
@@ -8,64 +8,73 @@ This project based on the "Java The Complete Reference, 8th Edition" and on the 
         └── main
            └── java 
               ├── AbstractDemo
-              │    ├── AbstractAreas                             #
-              │    └── AbstractDemo                              #
+              │    ├── AbstractAreas                           #
+              │    └── AbstractDemo                            #
               ├── AnnotationDemo
-              │    ├── Marker                                    #Annotation Marker  
-              │    ├── Meta                                      #@Retention annotation with Reflection
-              │    ├── Meta1                                     #@Retention annotation with Reflection
-              │    ├── RepeatAnno                                #@Repeatable annotation
-              │    ├── Single                                    #@Single annotation
-              │    └── TypeAnnoDemo                              #@Type annotations (@Target(ElementType.*))
+              │    ├── Marker                                  #Annotation Marker  
+              │    ├── Meta                                    #@Retention annotation with Reflection
+              │    ├── Meta1                                   #@Retention annotation with Reflection
+              │    ├── RepeatAnno                              #@Repeatable annotation
+              │    ├── Single                                  #@Single annotation
+              │    └── TypeAnnoDemo                            #@Type annotations (@Target(ElementType.*))
               ├── ArityDemo
-              │    ├── ArityMethods                              #
-              │    └── ArityMethodsWithOverloadingMethod         #
+              │    ├── ArityMethods                            #
+              │    └── ArityMethodsWithOverloadingMethod       #
               ├── AssertDemo
-              │    └── AssertDemo                                #Keyword 'assert'
+              │    └── AssertDemo                              #Keyword 'assert'
               ├── EnumDemo
-              │    ├── AskMe                                     #
-              │    ├── EnumDemo                                  #
-              │    ├── EnumDemo1                                 #
-              │    └── EnumDemo2                                 #
+              │    ├── AskMe                                   #
+              │    ├── EnumDemo                                #
+              │    ├── EnumDemo1                               #
+              │    └── EnumDemo2                               #
               ├── GenericDemo
-              │    ├── BoundedWildCard                           #Generics with upper boundaries
-              │    ├── BoundsDemo                                #Restrictions on generics type and usage of wildcard '<?>'
-              │    ├── GenConstrDemo                             #Generic constructors with upper boundaries
-              │    ├── GenDemo                                   #Generic type, '<T>'
-              │    ├── GenSuperDemo                              #Generic superclass
-              │    ├── GenSuperDemo1                             #Generic subclass
-              │    ├── HierarchyDemo                             #Generic with operator 'instanceof'
-              │    ├── OverrideDemo                              #
-              │    └── SimpGen                                   #Two generic types, '<T, E>'
+              │    ├── BoundedWildCard                         #Generics with upper boundaries
+              │    ├── BoundsDemo                              #Restrictions on generics type and usage of wildcard '<?>'
+              │    ├── GenConstrDemo                           #Generic constructors with upper boundaries
+              │    ├── GenDemo                                 #Generic type, '<T>'
+              │    ├── GenSuperDemo                            #Generic superclass
+              │    ├── GenSuperDemo1                           #Generic subclass
+              │    ├── HierarchyDemo                           #Generic with operator 'instanceof'
+              │    ├── OverrideDemo                            #Override methods with generic
+              │    └── SimpGen                                 #Two generic types, '<T, E>'
               ├── InheritanceDemo
-              │    ├── InheritanceBoxExample                     #
-              │    ├── SimpleInheritance                         #
-              │    └── SimpleOverride                            #
+              │    ├── InheritanceBoxExample                   #
+              │    ├── SimpleInheritance                       #
+              │    └── SimpleOverride                          #
               ├── InterfaceDemo
-              │    ├── AskMe                                     #
-              │    ├── IFExtends                                 #
-              │    ├── IfTest                                    #
-              │    ├── IFExtends2                                #
-              │    ├── IFExtends3                                #
-              │    ├── InterfDemo                                #
-              │    └── NestedIfDemo                              #
+              │    ├── AskMe                                   #
+              │    ├── IFExtends                               #
+              │    ├── IfTest                                  #
+              │    ├── IFExtends2                              #
+              │    ├── IFExtends3                              #
+              │    ├── InterfDemo                              #
+              │    └── NestedIfDemo                            #
+              ├── LambdaDemo
+              │    ├── BlockLambdaDemo                         #Lambda block expression (count factorial)
+              │    ├── BlockLambdaDemo1                        #Lambda block expression (reverse string)
+              │    ├── FunctionalInterDemo                     #Functional interface with Lambda expression
+              │    ├── GenericLambdaDemo                       #Lambda block expression with Generic
+              │    ├── LambdaDemo                              #Simple lambda expressions
+              │    ├── LambdaDemo1                             #Simple lambda expression
+              │    ├── LambdaExceptionDemo                     #Lambda expression and exception
+              │    └── lambdaAsArgumentDemo                    #Lambda expression as an argument 
               ├── ReaderDemo
-              │    ├── BRRead                                    #BufferedReader with reader() method
-              │    ├── BRReadLines                               #BufferedReader with readLine() method
-              │    ├── BRReadLines1                              #BufferedReader with readLine() method
-              │    ├── PrintWriterDemo                           #PrintWriter with println() method
-              │    └── ShowFile                                  #FileInputStream
+              │    ├── BRRead                                  #BufferedReader with reader() method
+              │    ├── BRReadLines                             #BufferedReader with readLine() method
+              │    ├── BRReadLines1                            #BufferedReader with readLine() method
+              │    ├── PrintWriterDemo                         #PrintWriter with println() method
+              │    └── ShowFile                                #FileInputStream
               ├── ThisDemo
-              │    └── MyClass                                   #Overloaded constructors with keyword 'this'
+              │    └── MyClass                                 #Overloaded constructors with keyword 'this'
               ├── ThreadDemo 
-              │    ├── CurrentTreadDemo                          #
-              │    ├── DeadLock                                  #
-              │    ├── DemoJoin                                  #
-              │    ├── MultiThreadDemo                           #
-              │    ├── PC                                        #
-              │    ├── SuspendResume                             #
-              │    ├── Synch                                     #
-              │    └── ThreadDemo                                #
+              │    ├── CurrentTreadDemo                        #
+              │    ├── DeadLock                                #
+              │    ├── DemoJoin                                #
+              │    ├── MultiThreadDemo                         #
+              │    ├── PC                                      #
+              │    ├── SuspendResume                           #
+              │    ├── Synch                                   #
+              │    └── ThreadDemo                              #
               └── hackerrank
                    ├── Currency_Formatter
                    ├── Date_and_Time
@@ -95,11 +104,12 @@ This project based on the "Java The Complete Reference, 8th Edition" and on the 
 <h4>Generics</h4>
 
 >A generic type can be restricted, by type of class or/and one to many interface types (by using logical operator AND). Keyword
-'extends' to set upper boundaries. Keyword 'super' to set lover boundaries. The generic type of method must be initialized before initialization of the returning type of the method
+'extends' to set upper boundaries. Keyword 'super' to set lover boundaries. The generic type of method must be initialized before initialization of the returning type of the method. Annotations have few limitations. (1) Cannot create an instance with type 'T'. (2) Cannot create static parameters with type 'T'. (3) Cannot create an instance of massive, where element type determined by type 'T'. (Ex: T vals = new Т[10];)
 
 <h4>Annotation</h4>
 
 >There are three types of 'Retention' annotation SOURCE/CLASS/RUNTIME. They change the life-cycle of annotations when the system is run. Class Annotation is super-interface for all annotations of interface.  
 @Repeatable allows repeat annotation in one place. The method must contain massive with field 'value'. Annotations have few limitations. (1) one annotation cannot inherit another one; (2) all methods which are declared in annotation must not have parameters; (3) they should return anything, such as (String, int...), except Generic types.
 
-
+<h4>Lambda</h4>
+> The functional interface is an interface with one method. Lambda expressions didn't work individually, they implement (define behavior) of 'abstract' method with the return type, which defined in the functional interface. Lambda block is similar to the method body and should have a return statement. Lambda expression cannot be generic, but a functional interface can be generic.

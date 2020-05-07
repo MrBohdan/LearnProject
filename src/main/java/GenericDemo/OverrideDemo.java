@@ -5,6 +5,8 @@ package GenericDemo;
  * interface types (by using logical operator AND). Keyword 'extends' to set the
  * upper boundaries. Keyword 'super' to set the lover boundaries.
  *
+ * In the generic classes, methods can be overridden, as in usual classes
+ *
  * @author Bohdan Skrypnyk
  */
 class MyGen<T> {
