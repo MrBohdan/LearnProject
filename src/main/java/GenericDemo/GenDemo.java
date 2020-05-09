@@ -30,7 +30,7 @@ class Gen<T> {
 public class GenDemo {
 
     public static void main(String args[]) {
-        // create a link to 'Gen' class with type Integer 
+        // create a reference to 'Gen' class with type Integer 
         Gen<Integer> obj;
 
         // create object with type Integer and assign it to 'obj'
@@ -45,7 +45,7 @@ public class GenDemo {
         System.out.println("Variable v : " + v);
         System.out.println();
 
-        // create a link to 'Gen' class with type 'String'
+        // create a reference to 'Gen' class with type 'String'
         Gen<String> obj1;
 
         // create 'String' object and assign it to 'obj'

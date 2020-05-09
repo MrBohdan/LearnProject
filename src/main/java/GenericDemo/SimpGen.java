@@ -35,7 +35,7 @@ class TwoGen<T, E> {
 public class SimpGen {
 
     public static void main(String args[]) {
-        // create a link to 'Gen' class with type Integer  and String
+        // create a reference to 'Gen' class with type Integer  and String
         TwoGen<Integer, String> obj = new TwoGen<Integer, String>(15, " Generic with two parameterized types");
 
         // вisplay types of пeneric 

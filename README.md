@@ -58,6 +58,11 @@ This project based on the "Java The Complete Reference, 8th Edition" and on the 
               │    ├── LambdaDemo1                             #Simple lambda expression
               │    ├── LambdaExceptionDemo                     #Lambda expression and exception
               │    └── lambdaAsArgumentDemo                    #Lambda expression as an argument 
+              ├── MethodRefDemo
+              │    ├── GenericMethodRefDemo                    #References on the generic methods
+              │    ├── InstanceWithObjectRefDemo               #References on the method instances 
+              │    ├── MethodReferDemo                         #Method reference operator '::'
+              │    └── UseMethodRef                            #Method reference with Collections Framework
               ├── ReaderDemo
               │    ├── BRRead                                  #BufferedReader with reader() method
               │    ├── BRReadLines                             #BufferedReader with readLine() method
@@ -113,4 +118,4 @@ This project based on the "Java The Complete Reference, 8th Edition" and on the 
 
 <h4>Lambda</h4>
 
->The functional interface is an interface with one method. Lambda expressions don't work individually, they implement (define behavior) of 'abstract' method with the return type, which defined in the functional interface. Lambda block is similar to the method body and should have a return statement. Lambda expression cannot be generic, but a functional interface can be generic.
+>The functional interface is an interface with one method. Lambda expressions don't work individually, they implement (define behavior) of 'abstract' method with the return type, which defined in the functional interface. Lambda block is similar to the method body and should have a return statement. Lambda expression cannot be generic, but a functional interface can be generic.  Method reference operator '::' working similar to Lambda expressions. The both just call a method\constructor\ an instance method.

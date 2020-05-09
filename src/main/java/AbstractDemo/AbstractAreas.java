@@ -51,7 +51,7 @@ public class AbstractAreas {
         //Figure figure = new Figure (12,2); // constructors from abstract classes cannot be called 
         Rectangle rectangle = new Rectangle(9, 8);
         Triangle triangle = new Triangle(10, 5);
-        Figure figure; //  but we still can call abstract class via link
+        Figure figure; //  but we still can call abstract class via reference
 
         figure = rectangle;
         System.out.println("Area equal = " + figure.area() + "\n");

@@ -19,7 +19,7 @@ public class LambdaDemo1 {
 
     public static void main(String args[]) {
 
-        // create link 'isFactor' to the functional interface.
+        // create reference 'isFactor' to the functional interface.
         NumericTest isFactor;
 
         // the expression checks if a number 'b' is a factor of 'a' 

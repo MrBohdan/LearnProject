@@ -20,7 +20,7 @@ public class FunctionalInterDemo {
 
     public static void main(String args[]) {
 
-        // create link 'mynum' to the functional interface
+        // create reference 'mynum' to the functional interface
         MyNumber mynum;
 
         // lambda expression, the same as a return type of functional interface

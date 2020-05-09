@@ -19,7 +19,7 @@ public class LambdaDemo {
 
     public static void main(String args[]) {
 
-        // create link 'mynum' to the functional interface.
+        // create reference 'mynum' to the functional interface.
         MyBool ckeckIf;
 
         // lambda expression check if the number is even or not. 

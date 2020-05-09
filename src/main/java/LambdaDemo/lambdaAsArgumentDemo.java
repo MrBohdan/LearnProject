@@ -51,8 +51,8 @@ public class lambdaAsArgumentDemo {
         }, inStr); // the second parameter 'inStr' defines a string, which will use the lambda expression
 
         System.out.println("String without spaces : " + outStr);
-        
-        // define 'reverse', as a link to the instance of the interface 
+
+        // define 'reverse', as a reference to the instance of the interface 
         SomeFunc1 reverse = (str) -> {
             String result = "";
 
@@ -61,8 +61,8 @@ public class lambdaAsArgumentDemo {
             }
             return result;
         };
-        
-        // pass a link 'reverse' to the method 'stringOp()'
+
+        // pass a reference 'reverse' to the method 'stringOp()'
         System.out.println("String without spaces : " + stringOp(reverse, outStr));
     }
 }

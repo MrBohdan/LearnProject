@@ -10,7 +10,7 @@ package ThreadDemo;
 //    Thread tred;
 //
 //    NewThread() {
-//        //Create new thread. "this" is linked to "run" method
+//        //Create new thread. "this" is referenced to "run" method
 //        tred = new Thread(this, "Demonstrative thread");
 //
 //        System.out.println("Second thread created " + tred);
@@ -36,7 +36,7 @@ package ThreadDemo;
 class NewThread extends Thread {
 
     NewThread() {
-        //Create new thread. "this" is linked to "run" method
+        //Create new thread. "this" is referenced to "run" method
         super("Demonstrative thread");
 
         System.out.println("Second thread created " + this);
