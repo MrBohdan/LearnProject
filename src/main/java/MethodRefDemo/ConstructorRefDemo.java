@@ -46,7 +46,7 @@ public class ConstructorRefDemo {
 
         // create a reference on the constructor 'Employee' 
         // method 'func' receive parameters from the functional interface 'MyIntEmployee',
-        // bc of this operator 'new' refers to the constructor
+        // bc of this operator 'new' refers to the constructor,
         // with parameters from the 'Employee' class
         MyIntEmployee myemp = Employee::new;
 

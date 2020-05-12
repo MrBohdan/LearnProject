@@ -24,7 +24,6 @@ public class GenericLambdaDemo {
         // this block expression return reversed word.
         SomeFunc<String> reverse = (str) -> {
             String result = "";
-            
             // get word length and start counting from the end.
             for (int i = str.length() - 1; i >= 0; i--) {
                 result += str.charAt(i); // display characters by index

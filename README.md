@@ -59,6 +59,7 @@ This project based on the "Java The Complete Reference, 8th Edition" and on the 
               │    ├── LambdaExceptionDemo                     #Lambda expression and exception
               │    └── lambdaAsArgumentDemo                    #Lambda expression as an argument 
               ├── MethodRefDemo
+              │    ├── ConstructorRefDemo                      #References on the constructor
               │    ├── GenericMethodRefDemo                    #References on the generic methods
               │    ├── InstanceWithObjectRefDemo               #References on the method instances 
               │    ├── MethodReferDemo                         #Method reference operator '::'
@@ -90,6 +91,7 @@ This project based on the "Java The Complete Reference, 8th Edition" and on the 
                    ├── Java_Loops_I
                    ├── Java_Loops_II
                    ├── Java_Output_Formatting
+                   ├── LargestNumberFamily                      #find the largest number in the family
                    ├── Logical_Op_Table
                    ├── Sock_Merchant
                    ├── Static_Initializer_Block
@@ -118,4 +120,4 @@ This project based on the "Java The Complete Reference, 8th Edition" and on the 
 
 <h4>Lambda</h4>
 
->The functional interface is an interface with one method. Lambda expressions don't work individually, they implement (define behavior) of 'abstract' method with the return type, which defined in the functional interface. Lambda block is similar to the method body and should have a return statement. Lambda expression cannot be generic, but a functional interface can be generic.  Method reference operator '::' working similar to Lambda expressions. The both just call a method\constructor\ an instance method.
+>The functional interface is an interface with one method. Lambda expressions don't work individually, they implement (define behavior) of 'abstract' method with the return type, which defined in the functional interface. Lambda block is similar to the method body and should have a return statement. Lambda expression cannot be generic, but a functional interface can be generic.  Method reference operator '::' working similar to Lambda expressions. They both just call a method\constructor\ an instance method.
