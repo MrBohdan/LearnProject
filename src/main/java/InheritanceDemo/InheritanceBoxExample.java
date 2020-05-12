@@ -1,9 +1,14 @@
 package InheritanceDemo;
 
 /**
+ * Inheritance is used to create hierarchies of the classes. Superclass define
+ * common characteristic for all subclasses, this reduces duplication of the So,
+ * each subclass gets characteristics of the superclass and will add its own
+ * unique characteristics.
  *
  * @author Bohdan Skrypnyk
  */
+// create superclass
 class Box {
 
     private double width;
@@ -42,61 +47,81 @@ class Box {
     }
 }
 
+// create subclass by extending super class 
 class BoxWeight extends Box {
 
     double weight;
 
     // create clone og the object
     public BoxWeight(BoxWeight obj) {
+
+        // The keyword 'super' used to refer to the constructor of a superclass
         super(obj);
         weight = obj.weight;
     }
 
     // constructor for all variables
     public BoxWeight(double w, double h, double d, double m) {
+
+        // The keyword 'super' used to refer to the constructor of a superclass
         super(w, h, d);
         weight = m;
     }
 
     public BoxWeight() {
+
+        // The keyword 'super' used to refer to the constructor of a superclass
         super();
         weight = -1;
     }
 
     // constructor to create cube 
     public BoxWeight(double len, double m) {
+
+        // The keyword 'super' used to refer to the constructor of a superclass
         super(len);
         weight = m;
     }
 }
 
+// create subclass by extending super class 
 class BoxColor extends Box {
 
     String color;
 
     public BoxColor(double w, double h, double d, String c) {
+
+        // The keyword 'super' used to refer to the constructor of a superclass
         super(w, h, d);
         color = c;
     }
 }
 
+// create a subclass of the subclass which extends the superclass
+// number of the subclasses are unlimited
 class Shipping extends BoxWeight {
 
-    double cost;
+    double cost; // cost of shipping 
 
     // clone of the object
     Shipping(Shipping obj) {
+
+        // The keyword 'super' used to refer to the constructor of a superclass
         super(obj);
     }
 
-    //defult constructor
+    //defult constructor (if values not passed)
     public Shipping() {
+
+        // The keyword 'super' used to refer to the constructor of a superclass
         super();
         this.cost = - 1;
     }
 
     //constructor for all var
     public Shipping(double cost, double w, double h, double d, double m) {
+
+        // The keyword 'super' used to refer to the constructor of a superclass
         super(w, h, d, m);
         this.cost = cost;
     }
@@ -108,6 +133,8 @@ class Shipping extends BoxWeight {
 
     //constructor to create cube
     public Shipping(double cost, double len, double m) {
+
+        // The keyword 'super' used to refer to the constructor of a superclass
         super(len, m);
         this.cost = cost;
     }
@@ -117,12 +144,15 @@ class Shipping extends BoxWeight {
 public class InheritanceBoxExample {
 
     public static void main(String args[]) {
+
+        // initialize objects 'BoxWeight'
         BoxWeight mybox1 = new BoxWeight(10, 20, 15, 34.3);
         BoxWeight mybox2 = new BoxWeight(2, 3, 4, 0.076);
         BoxWeight mybox3 = new BoxWeight();
         BoxWeight mycube = new BoxWeight(3, 2);
         BoxWeight myclone = new BoxWeight(mybox1);
 
+        // initialize objects 'Shipping'
         Shipping myshipping1 = new Shipping(11, 12, 15, 25, 5.06);
         Shipping myshipping2 = new Shipping(5, 1, 10, 15, 2.77);
         Shipping myshipping3 = new Shipping(5.6, 9.7, 5.25);

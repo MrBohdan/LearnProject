@@ -38,9 +38,9 @@ This project based on the "Java The Complete Reference, 8th Edition" and on the 
               │    ├── OverrideDemo                            #Override methods with generic
               │    └── SimpGen                                 #Two generic types, '<T, E>'
               ├── InheritanceDemo
-              │    ├── InheritanceBoxExample                   #
-              │    ├── SimpleInheritance                       #
-              │    └── SimpleOverride                          #
+              │    ├── InheritanceBoxExample                   #Interaction between superclass and subclasses
+              │    ├── SimpleInheritance                       #Interaction between superclass and subclass
+              │    └── SimpleOverride                          #Interaction between superclass and subclass
               ├── InterfaceDemo
               │    ├── AskMe                                   #
               │    ├── IFExtends                               #
@@ -85,7 +85,7 @@ This project based on the "Java The Complete Reference, 8th Edition" and on the 
                    ├── Currency_Formatter
                    ├── Date_and_Time
                    ├── Day_2_Operators
-                   ├── Fibonacci
+                   ├── Fibonacci                                #Find n-th Fibonacci number
                    ├── Java_Datatypes
                    ├── Java_End_of_file
                    ├── Java_Loops_I
@@ -112,6 +112,10 @@ This project based on the "Java The Complete Reference, 8th Edition" and on the 
 
 >A generic type can be restricted, by type of class or/and one to many interface types (by using logical operator AND). Keyword
 'extends' to set upper boundaries. Keyword 'super' to set lover boundaries. The generic type of method must be initialized before initialization of the returning type of the method. Annotations have few limitations. (1) Cannot create an instance with type 'T'. (2) Cannot create static parameters with type 'T'. (3) Cannot create an instance of massive, where element type determined by type 'T'. (Ex: T vals = new Т[10];).
+
+<h4>Inheritance</h4>
+
+>Inheritance is used to create hierarchies of the classes. Superclass define common characteristic for all subclasses, this reduces duplication of the  So, each subclass gets characteristics of the superclass and will add its own unique characteristics.
 
 <h4>Annotation</h4>
 
