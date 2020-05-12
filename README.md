@@ -91,7 +91,7 @@ This project based on the "Java The Complete Reference, 8th Edition" and on the 
                    ├── Java_Loops_I
                    ├── Java_Loops_II
                    ├── Java_Output_Formatting
-                   ├── LargestNumberFamily                      #find the largest number in the family
+                   ├── LargestNumberFamily                      #Find the largest number in the family
                    ├── Logical_Op_Table
                    ├── Sock_Merchant
                    ├── Static_Initializer_Block
@@ -106,12 +106,12 @@ This project based on the "Java The Complete Reference, 8th Edition" and on the 
 <h4>Enum</h4>
 
 >Enum - a special type of class, with constant/final variables. There is no way to create a new instance of enum class by using 
-"new". Enum class cannot be a superclass and cannot inherit from other class
+"new". Enum class cannot be a superclass and cannot inherit from other class.
 
 <h4>Generics</h4>
 
 >A generic type can be restricted, by type of class or/and one to many interface types (by using logical operator AND). Keyword
-'extends' to set upper boundaries. Keyword 'super' to set lover boundaries. The generic type of method must be initialized before initialization of the returning type of the method. Annotations have few limitations. (1) Cannot create an instance with type 'T'. (2) Cannot create static parameters with type 'T'. (3) Cannot create an instance of massive, where element type determined by type 'T'. (Ex: T vals = new Т[10];)
+'extends' to set upper boundaries. Keyword 'super' to set lover boundaries. The generic type of method must be initialized before initialization of the returning type of the method. Annotations have few limitations. (1) Cannot create an instance with type 'T'. (2) Cannot create static parameters with type 'T'. (3) Cannot create an instance of massive, where element type determined by type 'T'. (Ex: T vals = new Т[10];).
 
 <h4>Annotation</h4>
 
