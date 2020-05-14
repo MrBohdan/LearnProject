@@ -4,43 +4,17 @@ package ThreadDemo;
  *
  * @author Bohdan Skrypnyk
  */
-//New Thread
-//class NewThread implements Runnable {
-//
-//    Thread tred;
-//
-//    NewThread() {
-//        //Create new thread. "this" is referenced to "run" method
-//        tred = new Thread(this, "Demonstrative thread");
-//
-//        System.out.println("Second thread created " + tred);
-//        tred.start(); // run main thread , after this point NewThread and Main thread is running in parallel on one core 
-//    }
-//
-//    //Enter point of second thread
-//    @Override
-//    public void run() {
-//        for (int i = 5; i > 0; --i) {
-//            System.out.println("Second thread :" + i);
-//            try {
-//                Thread.sleep(500);
-//            } catch (InterruptedException ex) {
-//                System.out.println("Second thread is interrupted");
-//            }
-//        }
-//        System.out.println("Second thread finished");
-//    }
-//
-//}
+// create second thread
+class NewThread implements Runnable {
 
-class NewThread extends Thread {
+    Thread tred;
 
     NewThread() {
         //Create new thread. "this" is referenced to "run" method
-        super("Demonstrative thread");
+        tred = new Thread(this, "Demonstrative thread");
 
-        System.out.println("Second thread created " + this);
-        start(); // run main thread , after this point NewThread and Main thread is running in parallel on one core 
+        System.out.println("Second thread created " + tred);
+        tred.start(); // run main thread , after this point NewThread and Main thread is running in parallel on one core 
     }
 
     //Enter point of second thread
@@ -58,6 +32,35 @@ class NewThread extends Thread {
     }
 
 }
+
+//class NewThread extends Thread {
+//
+//    NewThread() {
+//        Create new thread. "this" is referenced to "run" method
+//        super("Demonstrative thread");
+//
+//        System.out.println("Second thread created " + this);
+//
+//        // run main thread , after this point NewThread and Main thread
+//        // is running in parallel on one core 
+//        start(); 
+//    }
+//
+//    Enter point of second thread
+//    @Override
+//    public void run() {
+//        for (int i = 5; i > 0; --i) {
+//            System.out.println("Second thread :" + i);
+//            try {
+//                Thread.sleep(500);
+//            } catch (InterruptedException ex) {
+//                System.out.println("Second thread is interrupted");
+//            }
+//        }
+//        System.out.println("Second thread finished");
+//    }
+//
+//}
 
 public class ThreadDemo {
 

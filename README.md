@@ -73,14 +73,14 @@ This project based on the "Java The Complete Reference, 8th Edition" and on the 
               ├── ThisDemo
               │    └── MyClass                                 #Overloaded constructors with keyword 'this'
               ├── ThreadDemo 
-              │    ├── CurrentTreadDemo                        #
-              │    ├── DeadLock                                #
-              │    ├── DemoJoin                                #
-              │    ├── MultiThreadDemo                         #
-              │    ├── PC                                      #
-              │    ├── SuspendResume                           #
-              │    ├── Synch                                   #
-              │    └── ThreadDemo                              #
+              │    ├── CurrentTreadDemo                        #Check main thread
+              │    ├── DeadLock                                #Example of the deadlock
+              │    ├── DemoJoin                                #Implementation of the methods isAlive() and join()
+              │    ├── MultiThreadDemo                         #Implementation of several threads
+              │    ├── PC                                      #Implementation of the methods notify() and wait()
+              │    ├── SuspendResume                           #Suspend and resume a thread 
+              │    ├── Synch                                   #Operator synchronized 
+              │    └── ThreadDemo                              #Interface Runnable and class Thread
               └── hackerrank                                    
                    ├── Currency_Formatter                       #
                    ├── Date_and_Time                            #
@@ -137,3 +137,7 @@ This project based on the "Java The Complete Reference, 8th Edition" and on the 
 <h4>Lambda</h4>
 
 >The functional interface is an interface with one method. Lambda expressions don't work individually, they implement (define behavior) of 'abstract' method with the return type, which defined in the functional interface. Lambda block is similar to the method body and should have a return statement. Lambda expression cannot be generic, but a functional interface can be generic.  Method reference operator '::' working similar to Lambda expressions. They both just call a method\constructor\ an instance method.
+
+<h4>Multithreading</h4>
+
+>Used to achieve asynchronous working of the system elements. The main thread should be finished last.
