@@ -1,8 +1,13 @@
 package InterfaceDemo;
 
 /**
- * Class which implement Interface should have/implement all methods from
- * interface.
+ * "One Interface multiple implementations". Interfaces cannot be used to create
+ * objects. All methods, variables static, and final (constant) by default. All
+ * methods in interface usually have empty methods. The subclass should
+ * implement all methods from the interface, but each subclass can implement
+ * these methods in a different way. To access the different method
+ * implementation through interface (Ex: MyInterface obj = new Class()).
+ * Interfaces can be nested in the class then they can be public\private.
  *
  * @author Bohdan Skrypnyk
  */

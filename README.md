@@ -8,7 +8,7 @@ This project based on the "Java The Complete Reference, 8th Edition" and on the 
         └── main
            └── java 
               ├── AbstractDemo
-              │    ├── AbstractAreas                           #
+              │    ├── AbstractAreas                           #Abstract class implementation
               │    └── AbstractDemo                            #Abstract class implementation
               ├── AnnotationDemo
               │    ├── Marker                                  #Annotation Marker  
@@ -42,13 +42,13 @@ This project based on the "Java The Complete Reference, 8th Edition" and on the 
               │    ├── SimpleInheritance                       #Interaction between superclass and subclass
               │    └── SimpleOverride                          #Interaction between superclass and subclass
               ├── InterfaceDemo
-              │    ├── AskMe                                   #
-              │    ├── IFExtends                               #
-              │    ├── IfTest                                  #
-              │    ├── IFExtends2                              #
-              │    ├── IFExtends3                              #
-              │    ├── InterfDemo                              #
-              │    └── NestedIfDemo                            #
+              │    ├── AskMe                                   #Implementation of an interface with variables
+              │    ├── IFExtends                               #Implementation of an interface
+              │    ├── IfTest                                  #Implementation of an interface with a stack
+              │    ├── IFExtends2                              #Implementation of an interface with a dynamic stack
+              │    ├── IFExtends3                              #Implementation of the static with dynamic stack
+              │    ├── InterfDemo                              #An interface extends an interface 
+              │    └── NestedIfDemo                            #Implementation of the nested interfaces
               ├── LambdaDemo
               │    ├── BlockLambdaDemo                         #Lambda block expression (count factorial)
               │    ├── BlockLambdaDemo1                        #Lambda block expression (reverse string)
@@ -81,7 +81,7 @@ This project based on the "Java The Complete Reference, 8th Edition" and on the 
               │    ├── SuspendResume                           #
               │    ├── Synch                                   #
               │    └── ThreadDemo                              #
-              └── hackerrank
+              └── hackerrank                                    
                    ├── Currency_Formatter                       #
                    ├── Date_and_Time                            #
                    ├── Day_2_Operators                          #
@@ -105,7 +105,11 @@ This project based on the "Java The Complete Reference, 8th Edition" and on the 
 
 <h4>Abstract</h4>
 
->Abstract class working in the same way as the superclass, so the subclass should implement all methods from abstract class or be abstract. Any class which has more than one abstract method must be initialized as abstract. Abstract classes cannot have any objects, so the instance of the abstract class cannot be received by using the keyword 'new'. Abstract methods cannot be static and constructors cannot be abstract.
+>The keyword 'abstract' is a non-access modifier. Abstract class working in a similar way as the superclass, so the subclass should implement all methods from abstract class or be abstract. Any class which has more than one abstract method must be initialized as abstract. Abstract classes cannot be used to create objects, so the instance of the not be received by using the keyword 'new'. Abstract methods cannot be static and constructors cannot be abstract. The difference with the interface, that abstract classes can have abstract declared variables, in the interface they should be final.
+
+<h4>Interfaces</h4>
+
+>"One Interface multiple implementations". Interfaces cannot be used to create objects. All methods, variables static, and final (constant) by default. All methods in interface usually have empty methods. The subclass should implement all methods from the interface, but each subclass can implement these methods in a different way. To access the different method implementation through interface (Ex: MyInterface obj = new Class()). Interfaces can be nested in the class then they can be public\private.
 
 <h4>Enum</h4>
 
@@ -116,6 +120,10 @@ This project based on the "Java The Complete Reference, 8th Edition" and on the 
 
 >A generic type can be restricted, by type of class or/and one to many interface types (by using logical operator AND). Keyword
 'extends' to set upper boundaries. Keyword 'super' to set lover boundaries. The generic type of method must be initialized before initialization of the returning type of the method. Annotations have few limitations. (1) Cannot create an instance with type 'T'. (2) Cannot create static parameters with type 'T'. (3) Cannot create an instance of massive, where element type determined by type 'T'. (Ex: T vals = new Т[10];).
+
+<h4>Polymorphism</h4>
+
+>When at least a few classes inherit from each other.
 
 <h4>Inheritance</h4>
 
