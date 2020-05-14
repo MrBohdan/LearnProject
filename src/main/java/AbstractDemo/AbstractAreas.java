@@ -1,6 +1,12 @@
 package AbstractDemo;
 
 /**
+ * Abstract class working in the same way as the superclass, so the subclass
+ * should implement all methods from abstract class or be abstract. Any class
+ * which has more than one abstract method must be initialized as abstract.
+ * Abstract classes cannot have any objects, so the instance of the abstract
+ * class cannot be received by using the keyword 'new'. Abstract methods cannot
+ * be static and constructors cannot be abstract.
  *
  * @author Bohdan Skrypnyk
  */

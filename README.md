@@ -9,7 +9,7 @@ This project based on the "Java The Complete Reference, 8th Edition" and on the 
            └── java 
               ├── AbstractDemo
               │    ├── AbstractAreas                           #
-              │    └── AbstractDemo                            #
+              │    └── AbstractDemo                            #Abstract class implementation
               ├── AnnotationDemo
               │    ├── Marker                                  #Annotation Marker  
               │    ├── Meta                                    #@Retention annotation with Reflection
@@ -82,26 +82,30 @@ This project based on the "Java The Complete Reference, 8th Edition" and on the 
               │    ├── Synch                                   #
               │    └── ThreadDemo                              #
               └── hackerrank
-                   ├── Currency_Formatter
-                   ├── Date_and_Time
-                   ├── Day_2_Operators
+                   ├── Currency_Formatter                       #
+                   ├── Date_and_Time                            #
+                   ├── Day_2_Operators                          #
                    ├── Fibonacci                                #Find n-th Fibonacci number
-                   ├── Java_Datatypes
-                   ├── Java_End_of_file
-                   ├── Java_Loops_I
-                   ├── Java_Loops_II
-                   ├── Java_Output_Formatting
+                   ├── Java_Datatypes                           #
+                   ├── Java_End_of_file                         #
+                   ├── Java_Loops_I                             #
+                   ├── Java_Loops_II                            #
+                   ├── Java_Output_Formatting                   #
                    ├── LargestNumberFamily                      #Find the largest number in the family
-                   ├── Logical_Op_Table
-                   ├── Sock_Merchant
-                   ├── Static_Initializer_Block
-                   ├── Strings
-                   ├── TelnetClient
-                   ├── Two_D_Massive
-                   └── compareTriplets   
+                   ├── Logical_Op_Table                         #   
+                   ├── Sock_Merchant                            #   
+                   ├── Static_Initializer_Block                 #
+                   ├── Strings                                  #
+                   ├── TelnetClient                             #
+                   ├── Two_D_Massive                            #
+                   └── compareTriplets                          #
 
 
 # Brief notes
+
+<h4>Abstract</h4>
+
+>Abstract class working in the same way as the superclass, so the subclass should implement all methods from abstract class or be abstract. Any class which has more than one abstract method must be initialized as abstract. Abstract classes cannot have any objects, so the instance of the abstract class cannot be received by using the keyword 'new'. Abstract methods cannot be static and constructors cannot be abstract.
 
 <h4>Enum</h4>
 
