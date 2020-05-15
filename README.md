@@ -23,10 +23,10 @@ This project based on the "Java The Complete Reference, 8th Edition" and on the 
               ├── AssertDemo
               │    └── AssertDemo                              #Keyword 'assert'
               ├── EnumDemo
-              │    ├── AskMe                                   #
-              │    ├── EnumDemo                                #
-              │    ├── EnumDemo1                               #
-              │    └── EnumDemo2                               #
+              │    ├── AskMe                                   #Simple Enum class implementation
+              │    ├── EnumDemo                                #Simple Enum class implementation
+              │    ├── EnumDemo1                               #implementation of the methods values() and valuesOf() 
+              │    └── EnumDemo2                               #Enum class with the methods ordinal(), compareTo() and equal()
               ├── GenericDemo
               │    ├── BoundedWildCard                         #Generics with upper boundaries
               │    ├── BoundsDemo                              #Restrictions on generics type and usage of wildcard '<?>'
@@ -113,8 +113,7 @@ This project based on the "Java The Complete Reference, 8th Edition" and on the 
 
 <h4>Enum</h4>
 
->Enum - a special type of class, with constant/final variables. There is no way to create a new instance of enum class by using 
-"new". Enum class cannot be a superclass and cannot inherit from other class.
+>Enum - a special type of class, with constant/final variables. There is no way to create a new instance of enum class by using "new". Enum class cannot be a superclass and cannot inherit from other classes, but it working the same as usual class, so there can be initialized constructors, methods, and so on.  
 
 <h4>Generics</h4>
 
