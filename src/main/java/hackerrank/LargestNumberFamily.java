@@ -53,11 +53,71 @@ public class LargestNumberFamily {
         return N;
     }
 
+    // another example
+    public static int solution2(int N) {
+        int resEx = 100000000; // set limit
+
+        String strConvert = Integer.toString(N); // convert an integer to the string
+        String temp1[] = new String[strConvert.length()]; // temp string
+        String temp = ""; // temp string
+
+        for (int i = 0; i <= strConvert.length() - 1; i++) {
+            temp += strConvert.charAt(i);
+            temp1[i] = temp;
+            temp = "";
+        }
+
+        // bubble sort 
+        for (int i = 0; i < temp1.length; i++) {
+            for (int a = 0; a < temp1.length; a++) {
+
+                // compare one strings with each other
+                // if caller string longer than next 
+                if (temp1[a].compareTo(temp1[i]) < 0) {
+
+                    // add a smaller string to temp.
+                    // bc 'arr[a]' more than 'arr[i]'
+                    // and need to swap them 
+                    temp = temp1[i];
+
+                    // replace/swap 'arr[a]' to position of 'arr[i]'.
+                    // A bigger string that was on a lower position
+                    // will be placed on a higher position where we're
+                    // a smaller string.
+                    temp1[i] = temp1[a];
+
+                    // A smaller string that was on a higher position
+                    // will be placed on a lower position where we're
+                    // a bigger string.
+                    temp1[a] = temp;
+                }
+            }
+            temp = "";
+        }
+
+        for (String str : temp1) {
+            temp += str; // add string one by one to the string
+        }
+
+        N = Integer.valueOf(temp); // convert string to the integer
+
+        if (N >= resEx) { // if 'N' is more than 100000000, will return -1
+            return -1;
+        }
+
+        return N;
+    }
+
     public static void main(String args[]) {
         System.out.println(solution(123)); // should return 321 
         System.out.println(solution(213)); // should return 321
         System.out.println(solution(553)); // should return 553
         System.out.println(solution(1548)); // hould return 8541
+
+        System.out.println(solution2(123)); // should return 321 
+        System.out.println(solution2(213)); // should return 321
+        System.out.println(solution2(553)); // should return 553
+        System.out.println(solution2(1548)); // hould return 8541
 
         // uncomment to run recursive method
 //        int a = 0;

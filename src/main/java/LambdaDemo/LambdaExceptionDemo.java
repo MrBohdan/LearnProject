@@ -5,7 +5,8 @@ package LambdaDemo;
  * didn't work individually, they implement (define behavior) of 'abstract'
  * method with the return type, which defined in the functional interface. So,
  * lambda expression and return type of the functional interface should be
- * similar. lambda block is similar to the method body.
+ * similar.Another way of using functional interfaces is to use the default
+ * library 'java.util.function.Function'.
  *
  * @author Bohdan Skrypnyk
  */
@@ -29,7 +30,7 @@ public class LambdaExceptionDemo {
     public static void main(String args[]) throws EmptyArrayException {
 
         double[] nums = {2.3, 4.6, 1.3, 6.9};
-        
+
         // unacceptable to initialize parameter n as n[],
         // because it used the context of the functional interface
         DoubleNumericArrayFunc average = (n) -> {
