@@ -22,8 +22,10 @@ public class UseTrim {
             System.out.println("Enter the name of the state : ");
 
             do {
-
+                // read input from user
                 str = bf.readLine();
+                
+                // remove space at the beginning of the string 
                 str = str.trim();
                 if (str.equals("Illinois")) {
 

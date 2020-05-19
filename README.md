@@ -73,13 +73,18 @@ This project based on the "Java The Complete Reference, 8th Edition" and on the 
               ├── ThisDemo
               │    └── MyClass                                 #Overloaded constructors with keyword 'this'
               ├── StringProcessing
+              │    ├── AppendDemo                              #StringBuffer with a append() method
+              │    ├── DeleteDemo                              #StringBuffer with the delete() and deleteCharAt() methods
               │    ├── EqualsNotEqualsTo                       #Difference between equal() and '=='
               │    ├── IndexOfDemo                             #The methods indexOf() and lastIndexOf()
-              │    ├── SortStrings                             #A method compareTo() with bubble sort 
-              │    ├── StirngJoinDemo                          #A method join()
+              │    ├── InsertDemo                              #StringBuffer with a method insert()
+              │    ├── ReplaceDemo                             #StringBuffer with a method replace()
+              │    ├── ReverseDemo                             #StringBuffer with a method reverse()
+              │    ├── SortStrings                             #StringBuffer with a method compareTo() with bubble sort 
+              │    ├── StirngJoinDemo                          #StringBuffer with a method join()
               │    ├── StringBufferDemo                        #StringBuffer with the capacity() and length() methods
-              │    ├── StringPlace                             #A method substring()
-              │    ├── UseTrim                                 #A method trim()
+              │    ├── StringPlace                             #StringBuffer with a method substring()
+              │    ├── UseTrim                                 #StringBuffer with a method trim()
               │    └── setCharAtDemo                           #StringBuffer with the setCharAt() and setLength() methods
               ├── ThreadDemo 
               │    ├── CurrentTreadDemo                        #Check main thread
