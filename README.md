@@ -26,7 +26,7 @@ This project based on the "Java The Complete Reference, 8th Edition" and on the 
               │    ├── AskMe                                   #Simple Enum class implementation
               │    ├── EnumDemo                                #Simple Enum class implementation
               │    ├── EnumDemo1                               #implementation of the methods values() and valuesOf() 
-              │    └── EnumDemo2                               #Enum class with the methods ordinal(), compareTo() and equal()
+              │    └── EnumDemo2                               #Enum class with the methods ordinal(), compareTo(), equal()
               ├── GenericDemo
               │    ├── BoundedWildCard                         #Generics with upper boundaries
               │    ├── BoundsDemo                              #Restrictions on generics type and usage of wildcard '<?>'
@@ -72,6 +72,15 @@ This project based on the "Java The Complete Reference, 8th Edition" and on the 
               │    └── ShowFile                                #FileInputStream
               ├── ThisDemo
               │    └── MyClass                                 #Overloaded constructors with keyword 'this'
+              ├── StringProcessing
+              │    ├── EqualsNotEqualsTo                       #Difference between equal() and '=='
+              │    ├── IndexOfDemo                             #The methods indexOf() and lastIndexOf()
+              │    ├── SortStrings                             #A method compareTo() with bubble sort 
+              │    ├── StirngJoinDemo                          #A method join()
+              │    ├── StringBufferDemo                        #StringBuffer with the capacity() and length() methods
+              │    ├── StringPlace                             #A method substring()
+              │    ├── UseTrim                                 #A method trim()
+              │    └── setCharAtDemo                           #StringBuffer with the setCharAt() and setLength() methods
               ├── ThreadDemo 
               │    ├── CurrentTreadDemo                        #Check main thread
               │    ├── DeadLock                                #Example of the deadlock
@@ -135,8 +144,12 @@ This project based on the "Java The Complete Reference, 8th Edition" and on the 
 
 <h4>Lambda</h4>
 
->The functional interface is an interface with one method. Lambda expressions don't work individually, they implement (define behavior) of 'abstract' method with the return type, which defined in the functional interface. Lambda block is similar to the method body and should have a return statement. Lambda expression cannot be generic, but a functional interface can be generic.  Method reference operator '::' working similar to Lambda expressions. They both just call a method\constructor\ an instance method.
+>The functional interface is an interface with one method. Lambda expressions don't work individually, they implement (define behavior) of 'abstract' method with the return type, which defined in the functional interface. Lambda block is similar to the method body and should have a return statement. Lambda expression cannot be generic, but a functional interface can be generic.  Method reference operator '::' working similar to Lambda expressions. They both just call a method\constructor\ an instance method. Another way of using functional interfaces is to use the default library 'java.util.function.Function'.
 
 <h4>Multithreading</h4>
 
 >Used to achieve asynchronous working of the system elements. The main thread should be finished last.
+
+<h4>Difference between method 'equals()' and operator '==' </h4>
+
+>A method 'equal()' compare symbols from the objects, whereas operator '==' check if two references belong to one instance.
