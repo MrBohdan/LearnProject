@@ -2,7 +2,7 @@ package StringProcessing;
 
 /**
  * A method 'replace()' is used to replace part of the string with a substring.
- *
+ *  
  * @author Bohdan Skrypnyk
  */
 public class ReplaceDemo {

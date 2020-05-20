@@ -49,6 +49,18 @@ This project based on the "Java The Complete Reference, 8th Edition" and on the 
               │    ├── IFExtends3                              #Implementation of the static with dynamic stack
               │    ├── InterfDemo                              #An interface extends an interface 
               │    └── NestedIfDemo                            #Implementation of the nested interfaces
+              ├── JavaLangClasses
+              │    ├── ArrrCopyDemo                            #System class and method arraycopy() and getProperty()
+              │    ├── CharIsDemo                              #The methods of the Character class 
+              │    ├── DoubleDemo                              #Simple implementation of a Double class
+              │    ├── Elapsed                                 #The methods currentTimeMillis() and nanoTime()
+              │    ├── ExecDemo                                #The Runtime and Process classes with a method exec()
+              │    ├── ExecDemoFini                            #The Runtime and Process classes with a method exec()
+              │    ├── InfNan                                  #Implementation of the methods isInfinite() and isNaN()
+              │    ├── MemoryDemo                              #Runtime class with the freeMemory(), totalMemory(), gc() methods
+              │    ├── ParseDemo                               #Convert String to Integer
+              │    ├── ProcessBuilderDemo                      #Implementation of a ProcessBuilder class
+              │    └── StringConversions                       #The methods toBinaryString(), toOctalString() and toHexString()
               ├── LambdaDemo
               │    ├── BlockLambdaDemo                         #Lambda block expression (count factorial)
               │    ├── BlockLambdaDemo1                        #Lambda block expression (reverse string)
