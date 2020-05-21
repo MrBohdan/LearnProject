@@ -22,7 +22,7 @@ class NewThread3 implements Runnable {
         tred.start();
     }
 
-    //point of enter to thread
+    // point of enter to thread
     @Override
     public void run() {
         try {
@@ -44,13 +44,13 @@ class NewThread3 implements Runnable {
     }
 
     synchronized void mysuspend() {
-        suspendFlag = true; // Set Flag as "true", to activate "wait();" method
+        suspendFlag = true; // Set flag as "true", to activate "wait();" method
     }
 
     synchronized void myresume() {
-        // Set Flag as "false", to skip "wait();" method
+        // Set flag as "false", to skip "wait();" method
         suspendFlag = false;
-        //This method return control to thred
+        // This method return control to thred
         notify();
     }
 }
@@ -79,7 +79,7 @@ public class SuspendResume {
             System.out.println("Interrupted ");
         }
 
-        //wait for threds to finish
+        // wait for finishing of all threads, before main thread will be finished
         try {
             obj1.tred.join();
             obj2.tred.join();
