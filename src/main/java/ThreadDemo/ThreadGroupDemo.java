@@ -1,6 +1,8 @@
 package ThreadDemo;
 
 /**
+ * A class 'ThreadGroup' allow a controlling group of the threads as a single
+ * tread.
  *
  * @author Bohdan Skrypnyk
  */

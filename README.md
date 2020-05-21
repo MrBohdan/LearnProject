@@ -60,6 +60,7 @@ This project based on the "Java The Complete Reference, 8th Edition" and on the 
               │    ├── ExecDemoFini                            #The Runtime and Process classes with a method exec()
               │    ├── InfNan                                  #Implementation of the methods isInfinite() and isNaN()
               │    ├── MemoryDemo                              #Runtime class with the freeMemory(), totalMemory(), gc() methods
+              │    ├── PackageDemo                             #Class Package
               │    ├── ParseDemo                               #Convert String to Integer
               │    ├── ProcessBuilderDemo                      #Implementation of a ProcessBuilder class
               │    ├── RTTI                                    #Class 'Class' with the methods getName() and getConstructor()
