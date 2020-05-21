@@ -50,8 +50,10 @@ This project based on the "Java The Complete Reference, 8th Edition" and on the 
               │    ├── InterfDemo                              #An interface extends an interface 
               │    └── NestedIfDemo                            #Implementation of the nested interfaces
               ├── JavaLangClasses
+              │    ├── Angels                                  #Class Math
               │    ├── ArrrCopyDemo                            #System class and method arraycopy() and getProperty()
               │    ├── CharIsDemo                              #The methods of the Character class 
+              │    ├── CloneDemo                               #A method clone()
               │    ├── DoubleDemo                              #Simple implementation of a Double class
               │    ├── Elapsed                                 #The methods currentTimeMillis() and nanoTime()
               │    ├── ExecDemo                                #The Runtime and Process classes with a method exec()
@@ -60,6 +62,7 @@ This project based on the "Java The Complete Reference, 8th Edition" and on the 
               │    ├── MemoryDemo                              #Runtime class with the freeMemory(), totalMemory(), gc() methods
               │    ├── ParseDemo                               #Convert String to Integer
               │    ├── ProcessBuilderDemo                      #Implementation of a ProcessBuilder class
+              │    ├── RTTI                                    #Class 'Class' with the methods getName() and getConstructor()
               │    └── StringConversions                       #The methods toBinaryString(), toOctalString() and toHexString()
               ├── LambdaDemo
               │    ├── BlockLambdaDemo                         #Lambda block expression (count factorial)
@@ -106,7 +109,8 @@ This project based on the "Java The Complete Reference, 8th Edition" and on the 
               │    ├── PC                                      #Implementation of the methods notify() and wait()
               │    ├── SuspendResume                           #Suspend and resume a thread 
               │    ├── Synch                                   #Operator synchronized 
-              │    └── ThreadDemo                              #Interface Runnable and class Thread
+              │    ├── ThreadDemo                              #Interface Runnable and class Thread
+              │    └── ThreadGroupDemo                         #Implementation of the ThreadGroup 
               └── hackerrank                                    
                    ├── Currency_Formatter                       #
                    ├── Date_and_Time                            #
@@ -170,3 +174,7 @@ This project based on the "Java The Complete Reference, 8th Edition" and on the 
 <h4>Difference between method 'equals()' and operator '==' </h4>
 
 >A method 'equal()' compare symbols from the objects, whereas operator '==' check if two references belong to one instance.
+
+<h4>Class Object</h4>
+
+>Is a superclass for all classes. In a class 'Object' defined methods, such as 'toString()', 'getClass()', 'clone()', equals(), 'wait()' and few more. Other classes just override these methods.
