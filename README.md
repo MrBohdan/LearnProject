@@ -197,9 +197,15 @@ Interface 'Dequeue'implements an interface 'Queue' and can work as queue, with t
 <h3>Classes</h3>
 
 >Class 'ArrayList' extends class 'AbstractList' and implements an interface 'List', is used for dynamic massive.
-Class 'LinkedList' extends class 'AbstractSequentialList' and implements the interfaces 'List', 'Queue', 'DeQueue'. It stores the values as separate linked objects/nodes with the data and link/pointer(to the next node). Moreover, exist a doubly LinkedList, where each node linked with the previous and next node. The 'LinkedList' extends 'Queue' and 'DeQueue', nodes cannot be accessed directly.
-Class 'HashSet' extends class 'AbstractSet' and implement an interface 'Set', is used to create collections. It stores the values in the hashtable, do not allow duplicate/NULL values, and not sorting values, so they can be displayed random order. HashCode used as the index in the hashtable.
-Class 'LinkedHashSet' extends class 'HashSet', have the same methods, and stores linked hash values in the same order as they were added. Display values in the corresponding order.
-Class 'TreeSet' extends class 'AbstractSet' and implements an interface 'NavigableSet', storing values in the Tree structure in sorted increasing order. Best for storing huge amounts of data, because of the fast execution of the sorted values, do not allow duplicate. For default sorting, values must be comparable.
-Class 'PriorityQueue' extends class 'AbstractQueue' and implements an interface 'Queue', is used to create a queue by the priority. Storing values in incrementing order.
-Class 'ArrayQueue' extends class 'AbstractCollection'and implements an interface 'Deque',  is used to create not limited dynamic massive.
+
+>Class 'LinkedList' extends class 'AbstractSequentialList' and implements the interfaces 'List', 'Queue', 'DeQueue'. It stores the values as separate linked objects/nodes with the data and link/pointer(to the next node). Moreover, exist a doubly LinkedList, where each node linked with the previous and next node. The 'LinkedList' extends 'Queue' and 'DeQueue', nodes cannot be accessed directly.
+
+>Class 'HashSet' extends class 'AbstractSet' and implement an interface 'Set', is used to create collections. It stores the values in the hashtable, do not allow duplicate/NULL values, and not sorting values, so they can be displayed random order. HashCode used as the index in the hashtable.
+
+>Class 'LinkedHashSet' extends class 'HashSet', have the same methods, and stores linked hash values in the same order as they were added. Display values in the corresponding order.
+
+>Class 'TreeSet' extends class 'AbstractSet' and implements an interface 'NavigableSet', storing values in the Tree structure in sorted increasing order. Best for storing huge amounts of data, because of the fast execution of the sorted values, do not allow duplicate. For default sorting, values must be comparable.
+
+>Class 'PriorityQueue' extends class 'AbstractQueue' and implements an interface 'Queue', is used to create a queue by the priority. Storing values in incrementing order.
+
+>Class 'ArrayQueue' extends class 'AbstractCollection'and implements an interface 'Deque',  is used to create not limited dynamic massive.
