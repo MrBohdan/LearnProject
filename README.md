@@ -22,6 +22,14 @@ This project based on the "Java The Complete Reference, 8th Edition" and on the 
               │    └── ArityMethodsWithOverloadingMethod       #
               ├── AssertDemo
               │    └── AssertDemo                              #Keyword 'assert'
+              ├── CollectionsDemo
+              │    ├── ArrayDequeDemo                          #Implementation of the ArrayDeque
+              │    ├── ArrayListDemo                           #Implementation of the ArrayList
+              │    ├── ArrayListToArray                        #ArrayList with a method toArray()
+              │    ├── HashSetDemo                             #Implementation of the HashSet
+              │    ├── LinkedHashSetDemo                       #Implementation of the LinkedHashSet
+              │    ├── LinkedListDemo                          #Implementation of the LinkedList
+              │    └── TreeSetDemo                             #Implementation of the TreeSet
               ├── EnumDemo
               │    ├── AskMe                                   #Simple Enum class implementation
               │    ├── EnumDemo                                #Simple Enum class implementation
@@ -179,3 +187,19 @@ This project based on the "Java The Complete Reference, 8th Edition" and on the 
 <h4>Class Object</h4>
 
 >Is a superclass for all classes. In a class 'Object' defined methods, such as 'toString()', 'getClass()', 'clone()', equals(), 'wait()' and few more. Other classes just override these methods.
+
+<h4>Collection Framework</h4>
+<h3>Interfaces</h3>
+
+>An interface 'Collection' contains all common methods which have all collections. Interface 'List' implements an interface 'Collection' and works as a list with index objects. Interface 'Set' implements an interface 'Collection' and define collections which do not allow duplicates. Interface 'SortedSet' implements an interface 'Set' and store objects in increasing order. Interface 'Queue' implements an interface 'Collection' and working as a queue (first entered object will be processed the first), so this collection can work just with the first element in the queue. 
+Interface 'Dequeue'implements an interface 'Queue' and can work as queue, with the first object or just with last object.
+
+<h3>Classes</h3>
+
+>Class 'ArrayList' extends class 'AbstractList' and implements an interface 'List', is used for dynamic massive.
+Class 'LinkedList' extends class 'AbstractSequentialList' and implements the interfaces 'List', 'Queue', 'DeQueue'. It stores the values as separate linked objects/nodes with the data and link/pointer(to the next node). Moreover, exist a doubly LinkedList, where each node linked with the previous and next node. The 'LinkedList' extends 'Queue' and 'DeQueue', nodes cannot be accessed directly.
+Class 'HashSet' extends class 'AbstractSet' and implement an interface 'Set', is used to create collections. It stores the values in the hashtable, do not allow duplicate/NULL values, and not sorting values, so they can be displayed random order. HashCode used as the index in the hashtable.
+Class 'LinkedHashSet' extends class 'HashSet', have the same methods, and stores linked hash values in the same order as they were added. Display values in the corresponding order.
+Class 'TreeSet' extends class 'AbstractSet' and implements an interface 'NavigableSet', storing values in the Tree structure in sorted increasing order. Best for storing huge amounts of data, because of the fast execution of the sorted values, do not allow duplicate. For default sorting, values must be comparable.
+Class 'PriorityQueue' extends class 'AbstractQueue' and implements an interface 'Queue', is used to create a queue by the priority. Storing values in incrementing order.
+Class 'ArrayQueue' extends class 'AbstractCollection'and implements an interface 'Deque',  is used to create not limited dynamic massive.
