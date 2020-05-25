@@ -21,7 +21,7 @@ public class ArrayDequeDemo {
         Employee3 empl5 = new Employee3(5, "Isabella", 25, 42.6);
         Employee3 empl6 = new Employee3(5, "Isabella", 25, 42.6);
 
-        // initialize an 'ArrayDeque' with the type 'Employee3'
+        // initialization of the 'ArrayDeque' with the type 'Employee3'
         ArrayDeque<Employee3> arrdq = new ArrayDeque();
 
         arrdq.push(empl1);

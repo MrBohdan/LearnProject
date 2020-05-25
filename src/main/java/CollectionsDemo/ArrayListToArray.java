@@ -14,7 +14,7 @@ public class ArrayListToArray {
 
     public static void main(String arhs[]) {
 
-        // initialize 'ArrayList' with the type 'Integer'
+        // initialization of the 'ArrayList' with the type 'Integer'
         ArrayList<Integer> arr = new ArrayList();
 
         // add values to 'ArrayList'
@@ -24,7 +24,7 @@ public class ArrayListToArray {
         arr.add(4);
         arr.add(5);
 
-        // initialize massive with the type 'Integer'
+        // initialization of the massive with the type 'Integer'
         Integer num[] = new Integer[arr.size()];
 
         // create massive from ArrayList

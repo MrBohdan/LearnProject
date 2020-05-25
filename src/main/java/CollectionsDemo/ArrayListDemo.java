@@ -44,15 +44,15 @@ public class ArrayListDemo {
 
     public static void main(String args[]) {
 
-        // initialize the objects of the type 'Employee'
+        // initialization of the objects of the type 'Employee'
         Employee empl1 = new Employee("Bob", 22, 22.5);
         Employee empl2 = new Employee("Stiven", 44, 23.1);
         Employee empl3 = new Employee("Daniel", 19, 26.9);
 
-        // initialize an 'ArrayList' with the type 'Employee'
+        // initialization of the 'ArrayList' with the type 'Employee'
         ArrayList<Employee> arr = new ArrayList(3);
 
-        // add employees to ArrayList
+        // add employees to 'ArrayList'
         arr.add(empl1);
         arr.add(empl2);
         arr.add(empl3);
