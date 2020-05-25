@@ -26,15 +26,19 @@ This project based on the "Java The Complete Reference, 8th Edition" and on the 
               │    ├── ArrayDequeDemo                          #Implementation of the ArrayDeque
               │    ├── ArrayListDemo                           #Implementation of the ArrayList
               │    ├── ArrayListToArray                        #ArrayList with a method toArray()
+              │    ├── EnumSetDemo                             #Implementation of the EnumSet
+              │    ├── HashMapDemo                             #Implementation of the HashMap
               │    ├── HashSetDemo                             #Implementation of the HashSet
+              │    ├── IteratorDemo                            #The Iterator interface
               │    ├── LinkedHashSetDemo                       #Implementation of the LinkedHashSet
               │    ├── LinkedListDemo                          #Implementation of the LinkedList
+              │    ├── SpliteratorDemo                         #The Spliterator interface
               │    └── TreeSetDemo                             #Implementation of the TreeSet
               ├── EnumDemo
               │    ├── AskMe                                   #Simple Enum class implementation
               │    ├── EnumDemo                                #Simple Enum class implementation
-              │    ├── EnumDemo1                               #implementation of the methods values() and valuesOf() 
-              │    └── EnumDemo2                               #Enum class with the methods ordinal(), compareTo(), equal()
+              │    ├── EnumDemo1                               #implementation of the values() and valuesOf() methods
+              │    └── EnumDemo2                               #Enum class with the ordinal(), compareTo(), equal() methods
               ├── GenericDemo
               │    ├── BoundedWildCard                         #Generics with upper boundaries
               │    ├── BoundsDemo                              #Restrictions on generics type and usage of wildcard '<?>'
@@ -58,17 +62,17 @@ This project based on the "Java The Complete Reference, 8th Edition" and on the 
               │    ├── InterfDemo                              #An interface extends an interface 
               │    └── NestedIfDemo                            #Implementation of the nested interfaces
               ├── JavaLangClasses
-              │    ├── Angels                                  #Class Math
-              │    ├── ArrrCopyDemo                            #System class and method arraycopy() and getProperty()
+              │    ├── Angels                                  #The Math class
+              │    ├── ArrrCopyDemo                            #System class with the arraycopy() and getProperty() methods
               │    ├── CharIsDemo                              #The methods of the Character class 
-              │    ├── CloneDemo                               #A method clone()
+              │    ├── CloneDemo                               #A clone() method
               │    ├── DoubleDemo                              #Simple implementation of a Double class
               │    ├── Elapsed                                 #The methods currentTimeMillis() and nanoTime()
-              │    ├── ExecDemo                                #The Runtime and Process classes with a method exec()
-              │    ├── ExecDemoFini                            #The Runtime and Process classes with a method exec()
-              │    ├── InfNan                                  #Implementation of the methods isInfinite() and isNaN()
+              │    ├── ExecDemo                                #The Runtime and Process classes with a exec() method
+              │    ├── ExecDemoFini                            #The Runtime and Process classes with a exec() method
+              │    ├── InfNan                                  #Implementation of the isInfinite() and isNaN() methods
               │    ├── MemoryDemo                              #Runtime class with the freeMemory(), totalMemory(), gc() methods
-              │    ├── PackageDemo                             #Class Package
+              │    ├── PackageDemo                             #The Package class
               │    ├── ParseDemo                               #Convert String to Integer
               │    ├── ProcessBuilderDemo                      #Implementation of a ProcessBuilder class
               │    ├── RTTI                                    #Class 'Class' with the methods getName() and getConstructor()
@@ -89,9 +93,9 @@ This project based on the "Java The Complete Reference, 8th Edition" and on the 
               │    ├── MethodReferDemo                         #Method reference operator '::'
               │    └── UseMethodRef                            #Method reference with Collections Framework
               ├── ReaderDemo
-              │    ├── BRRead                                  #BufferedReader with reader() method
-              │    ├── BRReadLines                             #BufferedReader with readLine() method
-              │    ├── BRReadLines1                            #BufferedReader with readLine() method
+              │    ├── BRRead                                  #BufferedReader with a reader() method
+              │    ├── BRReadLines                             #BufferedReader with a  readLine() method
+              │    ├── BRReadLines1                            #BufferedReader with a readLine() method
               │    ├── PrintWriterDemo                         #PrintWriter with println() method
               │    └── ShowFile                                #FileInputStream
               ├── ThisDemo
@@ -101,21 +105,21 @@ This project based on the "Java The Complete Reference, 8th Edition" and on the 
               │    ├── DeleteDemo                              #StringBuffer with the delete() and deleteCharAt() methods
               │    ├── EqualsNotEqualsTo                       #Difference between equal() and '=='
               │    ├── IndexOfDemo                             #The methods indexOf() and lastIndexOf()
-              │    ├── InsertDemo                              #StringBuffer with a method insert()
-              │    ├── ReplaceDemo                             #StringBuffer with a method replace()
-              │    ├── ReverseDemo                             #StringBuffer with a method reverse()
-              │    ├── SortStrings                             #StringBuffer with a method compareTo() with bubble sort 
-              │    ├── StirngJoinDemo                          #StringBuffer with a method join()
+              │    ├── InsertDemo                              #StringBuffer with a insert() method
+              │    ├── ReplaceDemo                             #StringBuffer with a replace() method
+              │    ├── ReverseDemo                             #StringBuffer with a reverse() method
+              │    ├── SortStrings                             #StringBuffer with a compareTo() method and bubble sort 
+              │    ├── StirngJoinDemo                          #StringBuffer with a join() method
               │    ├── StringBufferDemo                        #StringBuffer with the capacity() and length() methods
-              │    ├── StringPlace                             #StringBuffer with a method substring()
-              │    ├── UseTrim                                 #StringBuffer with a method trim()
+              │    ├── StringPlace                             #StringBuffer with a substring() method
+              │    ├── UseTrim                                 #StringBuffer with a trim() method
               │    └── setCharAtDemo                           #StringBuffer with the setCharAt() and setLength() methods
               ├── ThreadDemo 
               │    ├── CurrentTreadDemo                        #Check main thread
               │    ├── DeadLock                                #Example of the deadlock
-              │    ├── DemoJoin                                #Implementation of the methods isAlive() and join()
+              │    ├── DemoJoin                                #Implementation of the isAlive() and join() methods
               │    ├── MultiThreadDemo                         #Implementation of several threads
-              │    ├── PC                                      #Implementation of the methods notify() and wait()
+              │    ├── PC                                      #Implementation of the notify() and wait() methods
               │    ├── SuspendResume                           #Suspend and resume a thread 
               │    ├── Synch                                   #Operator synchronized 
               │    ├── ThreadDemo                              #Interface Runnable and class Thread
@@ -150,9 +154,9 @@ This project based on the "Java The Complete Reference, 8th Edition" and on the 
 
 >"One Interface multiple implementations". Interfaces cannot be used to create objects. All methods, variables static, and final (constant) by default. All methods in interface usually have empty methods. The subclass should implement all methods from the interface, but each subclass can implement these methods in a different way. To access the different method implementation through interface (Ex: MyInterface obj = new Class()). Interfaces can be nested in the class then they can be public\private.
 
-<h4>Enum</h4>
+<h4>Enumeration</h4>
 
->Enum - a special type of class, with constant/final variables. There is no way to create a new instance of enum class by using "new". Enum class cannot be a superclass and cannot inherit from other classes, but it working the same as usual class, so there can be initialized constructors, methods, and so on.  
+>Class 'Enum' - a special type of class, with constant/final variables. There is no way to create a new instance of enum class by using "new". Enum class cannot be a superclass and cannot inherit from other classes, but it working the same as usual class, so there can be initialized constructors, methods, and so on.  
 
 <h4>Generics</h4>
 
@@ -189,12 +193,12 @@ This project based on the "Java The Complete Reference, 8th Edition" and on the 
 >Is a superclass for all classes. In a class 'Object' defined methods, such as 'toString()', 'getClass()', 'clone()', equals(), 'wait()' and few more. Other classes just override these methods.
 
 <h4>Collection Framework</h4>
-<h3>Interfaces</h3>
+<h5>Interfaces</h5>
 
 >An interface 'Collection' contains all common methods which have all collections. Interface 'List' implements an interface 'Collection' and works as a list with index objects. Interface 'Set' implements an interface 'Collection' and define collections which do not allow duplicates. Interface 'SortedSet' implements an interface 'Set' and store objects in increasing order. Interface 'Queue' implements an interface 'Collection' and working as a queue (first entered object will be processed the first), so this collection can work just with the first element in the queue. 
 Interface 'Dequeue'implements an interface 'Queue' and can work as queue, with the first object or just with last object.
 
-<h3>Classes</h3>
+<h5>Classes</h5>
 
 >Class 'ArrayList' extends class 'AbstractList' and implements an interface 'List', is used for dynamic massive.
 
@@ -208,4 +212,14 @@ Interface 'Dequeue'implements an interface 'Queue' and can work as queue, with t
 
 >Class 'PriorityQueue' extends class 'AbstractQueue' and implements an interface 'Queue', is used to create a queue by the priority. Storing values in incrementing order.
 
->Class 'ArrayQueue' extends class 'AbstractCollection'and implements an interface 'Deque',  is used to create not limited dynamic massive.
+>Class 'ArrayQueue' extends class 'AbstractCollection' and implements an interface 'Deque',  is used to create not limited dynamic massive.
+
+>Class 'EnumSet'  extends class 'AbstractSet' and implement an interface 'Set', is used as special implementation for enumeration type.
+
+<h5>Iterator vs 'for loop'</h5>
+
+>There is no much difference between the 'Iterator' and the 'for loop'. The 'for loop' is more readable. But the 'for each' method does not allow to modify (add/remove) the array, in the iteration process. While an interface 'Iterator' allows. So, if no need to change collection, then the 'for each' is much convenient. 
+
+<h5>Mapping</h5>
+
+>Class 'HashMap' is used to store values by keys in hash-table. Do not allow duplicates.
