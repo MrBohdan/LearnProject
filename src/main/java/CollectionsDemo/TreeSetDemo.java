@@ -62,7 +62,7 @@ public class TreeSetDemo {
         // create the objects of the type 'Employee4' 
         Employee4 empl6 = new Employee4(7, "Isabella", 25, 42.6);
 
-        // initialize 'TreeSet' with the type 'Employee4'
+        // initialization of the 'TreeSet' with the type 'Employee4'
         TreeSet<Employee4> ts = new TreeSet();
 
         // add values to 'TreeSet'

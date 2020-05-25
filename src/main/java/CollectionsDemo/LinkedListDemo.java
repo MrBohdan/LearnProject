@@ -61,7 +61,7 @@ public class LinkedListDemo {
         Employee1 empl4 = new Employee1(4, "Olivia", 35, 22.5);
         Employee1 empl5 = new Employee1(5, "Isabella", 25, 42.6);
         
-        // initialize 'LinkedList' with the type 'Employee1'
+        // initialization of the 'LinkedList' with the type 'Employee1'
         LinkedList<Employee1> ll = new LinkedList();
 
         // add the objects to 'LinkedList'

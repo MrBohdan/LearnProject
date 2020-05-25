@@ -59,7 +59,7 @@ public class HashSetDemo {
         Employee3 empl4 = new Employee3(4, "Olivia", 35, 22.5);
         Employee3 empl5 = new Employee3(5, "Isabella", 25, 42.6);
 
-        // initialize 'HashSet' with the type 'Employee3'
+        // initialization of the 'HashSet' with the type 'Employee3'
         HashSet<Employee3> st = new HashSet();
 
         // add the objects to the 'HashSet'

@@ -21,7 +21,7 @@ public class LinkedHashSetDemo {
         Employee3 empl4 = new Employee3(4, "Olivia", 35, 22.5);
         Employee3 empl5 = new Employee3(5, "Isabella", 25, 42.6);
 
-        // initialize 'LinkedHashSet' with the type 'Employee3'
+        // initialization of the 'LinkedHashSet' with the type 'Employee3'
         LinkedHashSet<Employee3> lhs = new LinkedHashSet();
 
         // add values to 'LinkedHashSet'
