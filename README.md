@@ -26,13 +26,19 @@ This project based on the "Java The Complete Reference, 8th Edition" and on the 
               │    ├── ArrayDequeDemo                          #Implementation of the ArrayDeque
               │    ├── ArrayListDemo                           #Implementation of the ArrayList
               │    ├── ArrayListToArray                        #ArrayList with a method toArray()
+              │    ├── ComparatorDemo                          #The Comparator interface
+              │    ├── ComparatorDemo2                         #The Comparator interface
               │    ├── EnumSetDemo                             #Implementation of the EnumSet
               │    ├── HashMapDemo                             #Implementation of the HashMap
               │    ├── HashSetDemo                             #Implementation of the HashSet
               │    ├── IteratorDemo                            #The Iterator interface
+              │    ├── LinkedHashMapDemo                       #Implementation of the LinkedHashMap
               │    ├── LinkedHashSetDemo                       #Implementation of the LinkedHashSet
               │    ├── LinkedListDemo                          #Implementation of the LinkedList
               │    ├── SpliteratorDemo                         #The Spliterator interface
+              │    ├── TreeMapDemo                             #Implementation of the TreeMap
+              │    ├── TreeMapDemo2                            #The interface Comparator with a compareTo() method
+              │    ├── TreeMapDemo2A                           #The Comparator with a thenComparing() method and lambda
               │    └── TreeSetDemo                             #Implementation of the TreeSet
               ├── EnumDemo
               │    ├── AskMe                                   #Simple Enum class implementation
@@ -218,8 +224,18 @@ Interface 'Dequeue'implements an interface 'Queue' and can work as queue, with t
 
 <h5>Iterator vs 'for loop'</h5>
 
->There is no much difference between the 'Iterator' and the 'for loop'. The 'for loop' is more readable. But the 'for each' method does not allow to modify (add/remove) the array, in the iteration process. While an interface 'Iterator' allows. So, if no need to change collection, then the 'for each' is much convenient. 
+>There is no much difference between the 'Iterator' and the 'for loop', 'for-each loop'. The 'For-each loop' is more readable. But the 'For-each loop' does not allow to modify (add/remove) the array, in the iteration process. While an interface 'Iterator' allows. So, if no need to change collection, then the 'for each' is much convenient. 
 
 <h5>Mapping</h5>
 
->Class 'HashMap' is used to store values by keys in hash-table. Do not allow duplicates.
+>Class 'HashMap', is used to store values by keys in hash-table. Do not allow duplicates and it does not guarantee the order of the values. 
+
+>Class 'ThreeMap', is used to store values by keys in the sorted tree structure. This tree mapping guarantees that all values will be sorted, as key increases.
+
+>Class 'LinkedHashMap' extends a 'HashMap' class, is used to store values in the same order as they were added. 
+
+>Class 'EnumMap' implements an interface 'Map', is used for the keys of the 'Enum' type. 
+
+<h5>Comparator</h5>
+
+>An interface 'Comparator', is used to manipulate the order in collections.

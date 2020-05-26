@@ -4,11 +4,11 @@ import java.util.ArrayList;
 import java.util.Iterator;
 
 /**
- * There is no much difference between the 'Iterator' and the 'for loop'. The
- * 'for loop' is more readable. But the 'for each' method does not allow to
- * modify (add/remove) the array, in the iteration process. While an interface
- * 'Iterator' allows. So, if no need to change collection, then the 'for each'
- * is much convenient.
+ * There is no much difference between the 'Iterator' and the 'for loop',
+ * 'for-each loop'. The 'For-each loop' is more readable. But the 'For-each
+ * loop' does not allow to modify (add/remove) the array, in the iteration
+ * process. While an interface 'Iterator' allows. So, if no need to change
+ * collection, then the 'for each' is much convenient.
  *
  * @author Bohdan Skrypnyk
  */

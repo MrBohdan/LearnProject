@@ -32,7 +32,8 @@ public class HashMapDemo {
         hm.put(empl4.getId(), empl4);
         hm.put(empl5.getId(), empl5);
 
-        // return records from the 'HashMap' as 'Set' with type 'Map.Entry<Integer, Employee3>'
+        // return records from the 'HashMap' as 'Set'
+        // with type 'Map.Entry<Integer, Employee3>'
         Set<Map.Entry<Integer, Employee3>> set = hm.entrySet();
 
         // display 'Set'
