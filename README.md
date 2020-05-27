@@ -24,24 +24,24 @@ This project based on the "Java The Complete Reference, 8th Edition" and on the 
               │    └── AssertDemo                              #Keyword 'assert'
               ├── CollectionsDemo
               │    ├── AlgorithmsDemo                          #Implementation of the Collection algorithms
-              │    ├── ArrayDemo                               #
-              │    ├── ArrayDequeDemo                          #Implementation of the ArrayDeque
-              │    ├── ArrayListDemo                           #Implementation of the ArrayList
+              │    ├── ArrayDemo                               #Implementation of an Array class and it's methods
+              │    ├── ArrayDequeDemo                          #Implementation of an ArrayDeque
+              │    ├── ArrayListDemo                           #Implementation of an ArrayList
               │    ├── ArrayListToArray                        #ArrayList with a method toArray()
               │    ├── ComparatorDemo                          #The Comparator interface
               │    ├── ComparatorDemo2                         #The Comparator interface
-              │    ├── EnumSetDemo                             #Implementation of the EnumSet
-              │    ├── HashMapDemo                             #Implementation of the HashMap
-              │    ├── HashSetDemo                             #Implementation of the HashSet
+              │    ├── EnumSetDemo                             #Implementation of an EnumSet
+              │    ├── HashMapDemo                             #Implementation of a HashMap
+              │    ├── HashSetDemo                             #Implementation of a HashSet
               │    ├── IteratorDemo                            #The Iterator interface
-              │    ├── LinkedHashMapDemo                       #Implementation of the LinkedHashMap
-              │    ├── LinkedHashSetDemo                       #Implementation of the LinkedHashSet
-              │    ├── LinkedListDemo                          #Implementation of the LinkedList
+              │    ├── LinkedHashMapDemo                       #Implementation of a LinkedHashMap
+              │    ├── LinkedHashSetDemo                       #Implementation of a LinkedHashSet
+              │    ├── LinkedListDemo                          #Implementation of a LinkedList
               │    ├── SpliteratorDemo                         #The Spliterator interface
-              │    ├── TreeMapDemo                             #Implementation of the TreeMap
+              │    ├── TreeMapDemo                             #Implementation of a TreeMap
               │    ├── TreeMapDemo2                            #The interface Comparator with a compareTo() method
               │    ├── TreeMapDemo2A                           #The Comparator with a thenComparing() method and lambda
-              │    └── TreeSetDemo                             #Implementation of the TreeSet
+              │    └── TreeSetDemo                             #Implementation of a TreeSet
               ├── EnumDemo
               │    ├── AskMe                                   #Simple Enum class implementation
               │    ├── EnumDemo                                #Simple Enum class implementation
