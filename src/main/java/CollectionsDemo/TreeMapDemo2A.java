@@ -19,6 +19,7 @@ class CompareLastNames implements Comparator<String> {
         int a, j;
 
         // find the index on which beginning surname
+        // and sort in ascending order.
         a = str1.lastIndexOf(' ');
         j = str2.lastIndexOf(' ');
         return str1.substring(a).compareToIgnoreCase(str2.substring(j));
@@ -28,6 +29,7 @@ class CompareLastNames implements Comparator<String> {
 class CompareThenByFirstName implements Comparator<String> {
 
     // compare names if surnames are same
+    // and sort in ascending order.
     @Override
     public int compare(String str1, String str2) {
         return str1.compareToIgnoreCase(str2);

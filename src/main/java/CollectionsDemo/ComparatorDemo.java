@@ -49,7 +49,7 @@ class Cities implements Comparator<Cities> {
                 + ", has debit : " + getDebt() + " billion USD.");
     }
 
-    // compare cities names in reverse order
+    // compare cities names and sort in decrease order
     @Override
     public int compare(Cities name1, Cities name2) {
         return name2.getName().compareTo(name1.getName());

@@ -23,6 +23,8 @@ This project based on the "Java The Complete Reference, 8th Edition" and on the 
               ├── AssertDemo
               │    └── AssertDemo                              #Keyword 'assert'
               ├── CollectionsDemo
+              │    ├── AlgorithmsDemo                          #Implementation of the Collection algorithms
+              │    ├── ArrayDemo                               #
               │    ├── ArrayDequeDemo                          #Implementation of the ArrayDeque
               │    ├── ArrayListDemo                           #Implementation of the ArrayList
               │    ├── ArrayListToArray                        #ArrayList with a method toArray()

@@ -19,6 +19,7 @@ class CompareSurnames implements Comparator<String> {
         int a, j, k;
 
         // find the index on which beginning surname
+        // and sort in ascending order.
         a = str1.lastIndexOf(' ');
         j = str2.lastIndexOf(' ');
         k = str1.substring(a).compareTo(str2.substring(j));
