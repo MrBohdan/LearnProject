@@ -38,6 +38,7 @@ This project based on the "Java The Complete Reference, 8th Edition" and on the 
               │    ├── LinkedHashSetDemo                       #Implementation of a LinkedHashSet
               │    ├── LinkedListDemo                          #Implementation of a LinkedList
               │    ├── SpliteratorDemo                         #The Spliterator interface
+              │    ├── StackDemo                               #Implementation of a Stack class
               │    ├── TreeMapDemo                             #Implementation of a TreeMap
               │    ├── TreeMapDemo2                            #The interface Comparator with a compareTo() method
               │    ├── TreeMapDemo2A                           #The Comparator with a thenComparing() method and lambda
@@ -162,7 +163,7 @@ This project based on the "Java The Complete Reference, 8th Edition" and on the 
 
 >"One Interface multiple implementations". Interfaces cannot be used to create objects. All methods, variables static, and final (constant) by default. All methods in interface usually have empty methods. The subclass should implement all methods from the interface, but each subclass can implement these methods in a different way. To access the different method implementation through interface (Ex: MyInterface obj = new Class()). Interfaces can be nested in the class then they can be public\private.
 
-<h4>Enumeration</h4>
+<h4>Enum</h4>
 
 >Class 'Enum' - a special type of class, with constant/final variables. There is no way to create a new instance of enum class by using "new". Enum class cannot be a superclass and cannot inherit from other classes, but it working the same as usual class, so there can be initialized constructors, methods, and so on.  
 
@@ -203,8 +204,17 @@ This project based on the "Java The Complete Reference, 8th Edition" and on the 
 <h4>Collection Framework</h4>
 <h5>Interfaces</h5>
 
->An interface 'Collection' contains all common methods which have all collections. Interface 'List' implements an interface 'Collection' and works as a list with index objects. Interface 'Set' implements an interface 'Collection' and define collections which do not allow duplicates. Interface 'SortedSet' implements an interface 'Set' and store objects in increasing order. Interface 'Queue' implements an interface 'Collection' and working as a queue (first entered object will be processed the first), so this collection can work just with the first element in the queue. 
-Interface 'Dequeue'implements an interface 'Queue' and can work as queue, with the first object or just with last object.
+>An interface 'Collection' contains all common methods which have all collections.
+
+>Interface 'List' implements an interface 'Collection' and works as a list with index objects. 
+
+>Interface 'Set' implements an interface 'Collection' and define collections which do not allow duplicates.
+
+>Interface 'SortedSet' implements an interface 'Set' and store objects in increasing order. 
+
+>Interface 'Queue' implements an interface 'Collection' and working as a queue (first entered object will be processed the first), so this collection can work just with the first element in the queue. 
+
+>Interface 'Dequeue'implements an interface 'Queue' and can work as queue, with the first object or just with last object.
 
 <h5>Classes</h5>
 
@@ -223,6 +233,8 @@ Interface 'Dequeue'implements an interface 'Queue' and can work as queue, with t
 >Class 'ArrayQueue' extends class 'AbstractCollection' and implements an interface 'Deque',  is used to create not limited dynamic massive.
 
 >Class 'EnumSet'  extends class 'AbstractSet' and implement an interface 'Set', is used as special implementation for enumeration type.
+
+>Class 'Stack' implements a standard stack with the rule "Last entered - the first processed". But better to use the 'ArrayDeque' that implements 'Queue, Deque, and Stack'.
 
 <h5>Iterator vs 'for loop'</h5>
 
