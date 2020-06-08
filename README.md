@@ -28,17 +28,22 @@ This project based on the "Java The Complete Reference, 8th Edition" and on the 
               │    ├── ArrayDequeDemo                          #Implementation of an ArrayDeque
               │    ├── ArrayListDemo                           #Implementation of an ArrayList
               │    ├── ArrayListToArray                        #ArrayList with a method toArray()
+              │    ├── BitSetDemo                              #Implementation of a BitSet
               │    ├── ComparatorDemo                          #The Comparator interface
               │    ├── ComparatorDemo2                         #The Comparator interface
               │    ├── EnumSetDemo                             #Implementation of an EnumSet
               │    ├── HashMapDemo                             #Implementation of a HashMap
               │    ├── HashSetDemo                             #Implementation of a HashSet
+              │    ├── HashtableDemo                           #Implementation of a Hashtable
               │    ├── IteratorDemo                            #The Iterator interface
               │    ├── LinkedHashMapDemo                       #Implementation of a LinkedHashMap
               │    ├── LinkedHashSetDemo                       #Implementation of a LinkedHashSet
               │    ├── LinkedListDemo                          #Implementation of a LinkedList
+              │    ├── PropertiesDemo                          #Implementation of a Properties class
+              │    ├── PropertiesDemo1                         #Properties class with the store() and load() methods
               │    ├── SpliteratorDemo                         #The Spliterator interface
               │    ├── StackDemo                               #Implementation of a Stack class
+              │    ├── StringTokenizerDemo                     #Implementation of a StringTokenizer class
               │    ├── TreeMapDemo                             #Implementation of a TreeMap
               │    ├── TreeMapDemo2                            #The interface Comparator with a compareTo() method
               │    ├── TreeMapDemo2A                           #The Comparator with a thenComparing() method and lambda
