@@ -39,6 +39,7 @@ This project based on the "Java The Complete Reference, 8th Edition" and on the 
               │    ├── LinkedHashMapDemo                       #Implementation of a LinkedHashMap
               │    ├── LinkedHashSetDemo                       #Implementation of a LinkedHashSet
               │    ├── LinkedListDemo                          #Implementation of a LinkedList
+              │    ├── OptionalDemo                            #Implementation of an Optional class
               │    ├── PropertiesDemo                          #Implementation of a Properties class
               │    ├── PropertiesDemo1                         #Properties class with the store() and load() methods
               │    ├── SpliteratorDemo                         #The Spliterator interface
@@ -162,19 +163,19 @@ This project based on the "Java The Complete Reference, 8th Edition" and on the 
 
 <h4>Abstract</h4>
 
->The keyword 'abstract' is a non-access modifier. Abstract class working in a similar way as the superclass, so the subclass should implement all methods from abstract class or be abstract. Any class which has more than one abstract method must be initialized as abstract. Abstract classes cannot be used to create objects, so the instance of the not be received by using the keyword 'new'. Abstract methods cannot be static and constructors cannot be abstract. The difference with the interface, that abstract classes can have abstract declared variables, in the interface they should be final.
+* The keyword 'abstract' is a non-access modifier. Abstract class working in a similar way as the superclass, so the subclass should implement all methods from abstract class or be abstract. Any class which has more than one abstract method must be initialized as abstract. Abstract classes cannot be used to create objects, so the instance of the not be received by using the keyword 'new'. Abstract methods cannot be static and constructors cannot be abstract. The difference with the interface, that abstract classes can have abstract declared variables, in the interface they should be final.
 
 <h4>Interfaces</h4>
 
->"One Interface multiple implementations". Interfaces cannot be used to create objects. All methods, variables static, and final (constant) by default. All methods in interface usually have empty methods. The subclass should implement all methods from the interface, but each subclass can implement these methods in a different way. To access the different method implementation through interface (Ex: MyInterface obj = new Class()). Interfaces can be nested in the class then they can be public\private.
+* "One Interface multiple implementations". Interfaces cannot be used to create objects. All methods, variables static, and final (constant) by default. All methods in interface usually have empty methods. The subclass should implement all methods from the interface, but each subclass can implement these methods in a different way. To access the different method implementation through interface (Ex: MyInterface obj = new Class()). Interfaces can be nested in the class then they can be public\private.
 
 <h4>Enum</h4>
 
->Class 'Enum' - a special type of class, with constant/final variables. There is no way to create a new instance of enum class by using "new". Enum class cannot be a superclass and cannot inherit from other classes, but it working the same as usual class, so there can be initialized constructors, methods, and so on.  
+* Class 'Enum' - a special type of class, with constant/final variables. There is no way to create a new instance of enum class by using "new". Enum class cannot be a superclass and cannot inherit from other classes, but it working the same as usual class, so there can be initialized constructors, methods, and so on.  
 
 <h4>Generics</h4>
 
->A generic type can be restricted, by type of class or/and one to many interface types (by using logical operator AND). Keyword
+* A generic type can be restricted, by type of class or/and one to many interface types (by using logical operator AND). Keyword
 'extends' to set upper boundaries. Keyword 'super' to set lover boundaries. The generic type of method must be initialized before initialization of the returning type of the method. Annotations have few limitations. (1) Cannot create an instance with type 'T'. (2) Cannot create static parameters with type 'T'. (3) Cannot create an instance of massive, where element type determined by type 'T'. (Ex: T vals = new Т[10];).
 
 <h4>Polymorphism</h4>
@@ -183,78 +184,78 @@ This project based on the "Java The Complete Reference, 8th Edition" and on the 
 
 <h4>Inheritance</h4>
 
->Inheritance is used to create hierarchies of the classes. Superclass define common characteristic for all subclasses, this reduces duplication of the  So, each subclass gets characteristics of the superclass and will add its own unique characteristics.
+* Inheritance is used to create hierarchies of the classes. Superclass define common characteristic for all subclasses, this reduces duplication of the  So, each subclass gets characteristics of the superclass and will add its own unique characteristics.
 
 <h4>Annotation</h4>
 
->There are three types of 'Retention' annotation SOURCE/CLASS/RUNTIME. They change the life-cycle of annotations when the system is run. Class Annotation is super-interface for all annotations of interface.  
+* There are three types of 'Retention' annotation SOURCE/CLASS/RUNTIME. They change the life-cycle of annotations when the system is run. Class Annotation is super-interface for all annotations of interface.  
 @Repeatable allows repeat annotation in one place. The method must contain massive with field 'value'. Annotations have few limitations. (1) one annotation cannot inherit another one; (2) all methods which are declared in annotation must not have parameters; (3) they should return anything, such as (String, int...), except Generic types.
 
 <h4>Lambda</h4>
 
->The functional interface is an interface with one method. Lambda expressions don't work individually, they implement (define behavior) of 'abstract' method with the return type, which defined in the functional interface. Lambda block is similar to the method body and should have a return statement. Lambda expression cannot be generic, but a functional interface can be generic.  Method reference operator '::' working similar to Lambda expressions. They both just call a method\constructor\ an instance method. Another way of using functional interfaces is to use the default library 'java.util.function.Function'.
+* The functional interface is an interface with one method. Lambda expressions don't work individually, they implement (define behavior) of 'abstract' method with the return type, which defined in the functional interface. Lambda block is similar to the method body and should have a return statement. Lambda expression cannot be generic, but a functional interface can be generic.  Method reference operator '::' working similar to Lambda expressions. They both just call a method\constructor\ an instance method. Another way of using functional interfaces is to use the default library 'java.util.function.Function'.
 
 <h4>Multithreading</h4>
 
->Used to achieve asynchronous working of the system elements. The main thread should be finished last.
+* Used to achieve asynchronous working of the system elements. The main thread should be finished last.
 
 <h4>Difference between method 'equals()' and operator '==' </h4>
 
->A method 'equal()' compare symbols from the objects, whereas operator '==' check if two references belong to one instance.
+* A method 'equal()' compare symbols from the objects, whereas operator '==' check if two references belong to one instance.
 
 <h4>Class Object</h4>
 
->Is a superclass for all classes. In a class 'Object' defined methods, such as 'toString()', 'getClass()', 'clone()', equals(), 'wait()' and few more. Other classes just override these methods.
+* Is a superclass for all classes. In a class 'Object' defined methods, such as 'toString()', 'getClass()', 'clone()', equals(), 'wait()' and few more. Other classes just override these methods.
 
 <h4>Collection Framework</h4>
 <h5>Interfaces</h5>
 
->An interface 'Collection' contains all common methods which have all collections.
+* An interface 'Collection' contains all common methods which have all collections.
 
->Interface 'List' implements an interface 'Collection' and works as a list with index objects. 
+* Interface 'List' implements an interface 'Collection' and works as a list with index objects. 
 
->Interface 'Set' implements an interface 'Collection' and define collections which do not allow duplicates.
+* Interface 'Set' implements an interface 'Collection' and define collections which do not allow duplicates.
 
->Interface 'SortedSet' implements an interface 'Set' and store objects in increasing order. 
+* Interface 'SortedSet' implements an interface 'Set' and store objects in increasing order. 
 
->Interface 'Queue' implements an interface 'Collection' and working as a queue (first entered object will be processed the first), so this collection can work just with the first element in the queue. 
+* Interface 'Queue' implements an interface 'Collection' and working as a queue (first entered object will be processed the first), so this collection can work just with the first element in the queue. 
 
->Interface 'Dequeue'implements an interface 'Queue' and can work as queue, with the first object or just with last object.
+* Interface 'Dequeue'implements an interface 'Queue' and can work as queue, with the first object or just with last object.
 
 <h5>Classes</h5>
 
->Class 'ArrayList' extends class 'AbstractList' and implements an interface 'List', is used for dynamic massive.
+* Class 'ArrayList' extends class 'AbstractList' and implements an interface 'List', is used for dynamic massive.
 
->Class 'LinkedList' extends class 'AbstractSequentialList' and implements the interfaces 'List', 'Queue', 'DeQueue'. It stores the values as separate linked objects/nodes with the data and link/pointer(to the next node). Moreover, exist a doubly LinkedList, where each node linked with the previous and next node. The 'LinkedList' extends 'Queue' and 'DeQueue', nodes cannot be accessed directly.
+* Class 'LinkedList' extends class 'AbstractSequentialList' and implements the interfaces 'List', 'Queue', 'DeQueue'. It stores the values as separate linked objects/nodes with the data and link/pointer(to the next node). Moreover, exist a doubly LinkedList, where each node linked with the previous and next node. The 'LinkedList' extends 'Queue' and 'DeQueue', nodes cannot be accessed directly.
 
->Class 'HashSet' extends class 'AbstractSet' and implement an interface 'Set', is used to create collections. It stores the values in the hashtable, do not allow duplicate/NULL values, and not sorting values, so they can be displayed random order. HashCode used as the index in the hashtable.
+* Class 'HashSet' extends class 'AbstractSet' and implement an interface 'Set', is used to create collections. It stores the values in the hashtable, do not allow duplicate/NULL values, and not sorting values, so they can be displayed random order. HashCode used as the index in the hashtable.
 
->Class 'LinkedHashSet' extends class 'HashSet', have the same methods, and stores linked hash values in the same order as they were added. Display values in the corresponding order.
+* Class 'LinkedHashSet' extends class 'HashSet', have the same methods, and stores linked hash values in the same order as they were added. Display values in the corresponding order.
 
->Class 'TreeSet' extends class 'AbstractSet' and implements an interface 'NavigableSet', storing values in the Tree structure in sorted increasing order. Best for storing huge amounts of data, because of the fast execution of the sorted values, do not allow duplicate. For default sorting, values must be comparable.
+* Class 'TreeSet' extends class 'AbstractSet' and implements an interface 'NavigableSet', storing values in the Tree structure in sorted increasing order. Best for storing huge amounts of data, because of the fast execution of the sorted values, do not allow duplicate. For default sorting, values must be comparable.
 
->Class 'PriorityQueue' extends class 'AbstractQueue' and implements an interface 'Queue', is used to create a queue by the priority. Storing values in incrementing order.
+* Class 'PriorityQueue' extends class 'AbstractQueue' and implements an interface 'Queue', is used to create a queue by the priority. Storing values in incrementing order.
 
->Class 'ArrayQueue' extends class 'AbstractCollection' and implements an interface 'Deque',  is used to create not limited dynamic massive.
+* Class 'ArrayQueue' extends class 'AbstractCollection' and implements an interface 'Deque',  is used to create not limited dynamic massive.
 
->Class 'EnumSet'  extends class 'AbstractSet' and implement an interface 'Set', is used as special implementation for enumeration type.
+* Class 'EnumSet'  extends class 'AbstractSet' and implement an interface 'Set', is used as special implementation for enumeration type.
 
->Class 'Stack' implements a standard stack with the rule "Last entered - the first processed". But better to use the 'ArrayDeque' that implements 'Queue, Deque, and Stack'.
+* Class 'Stack' implements a standard stack with the rule "Last entered - the first processed". But better to use the 'ArrayDeque' that implements 'Queue, Deque, and Stack'.
 
 <h5>Iterator vs 'for loop'</h5>
 
->There is no much difference between the 'Iterator' and the 'for loop', 'for-each loop'. The 'For-each loop' is more readable. But the 'For-each loop' does not allow to modify (add/remove) the array, in the iteration process. While an interface 'Iterator' allows. So, if no need to change collection, then the 'for each' is much convenient. 
+* There is no much difference between the 'Iterator' and the 'for loop', 'for-each loop'. The 'For-each loop' is more readable. But the 'For-each loop' does not allow to modify (add/remove) the array, in the iteration process. While an interface 'Iterator' allows. So, if no need to change collection, then the 'for each' is much convenient. 
 
 <h5>Mapping</h5>
 
->Class 'HashMap', is used to store values by keys in hash-table. Do not allow duplicates and it does not guarantee the order of the values. 
+* Class 'HashMap', is used to store values by keys in hash-table. Do not allow duplicates and it does not guarantee the order of the values. 
 
->Class 'ThreeMap', is used to store values by keys in the sorted tree structure. This tree mapping guarantees that all values will be sorted, as key increases.
+* Class 'ThreeMap', is used to store values by keys in the sorted tree structure. This tree mapping guarantees that all values will be sorted, as key increases.
 
->Class 'LinkedHashMap' extends a 'HashMap' class, is used to store values in the same order as they were added. 
+* Class 'LinkedHashMap' extends a 'HashMap' class, is used to store values in the same order as they were added. 
 
->Class 'EnumMap' implements an interface 'Map', is used for the keys of the 'Enum' type. 
+* Class 'EnumMap' implements an interface 'Map', is used for the keys of the 'Enum' type. 
 
 <h5>Comparator</h5>
 
->An interface 'Comparator', is used to manipulate the order in collections.
+* An interface 'Comparator', is used to manipulate the order in collections.
